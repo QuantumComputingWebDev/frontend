@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: 12px;
+  font-size: 20px;
   margin-bottom: 5px;
 `;
 
@@ -27,13 +27,15 @@ const SingleDigit = styled.span`
   display: flex;
   flex: 0 1 25%;
   font-size: 30px;
-  background-color: #404549;
+  background-color: #494045;
   border-radius: 5px;
   padding: 10px 12px;
   color: white;
+
   &:first-child {
     margin-right: 2px;
   }
+
   &:after {
     position: absolute;
     left: 0px;

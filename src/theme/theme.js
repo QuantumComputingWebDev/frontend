@@ -29,7 +29,7 @@ const rawTheme = createTheme({
         },
     },
     typography: {
-        fontFamily: "'Work Sans', sans-serif",
+        fontFamily: "'Bahij', sans-serif",
         fontSize: 14,
         fontWeightLight: 300, // Work Sans
         fontWeightRegular: 400, // Work Sans
@@ -40,8 +40,8 @@ const rawTheme = createTheme({
 const fontHeader = {
     color: rawTheme.palette.text.primary,
     fontWeight: rawTheme.typography.fontWeightMedium,
-    fontFamily: "'Roboto Condensed', sans-serif",
-    textTransform: 'uppercase',
+    fontFamily: "'Bahij', sans-serif",
+    // textTransform: 'uppercase',
 };
 
 const theme = {
@@ -80,26 +80,26 @@ const theme = {
         },
         h5: {
             ...rawTheme.typography.h5,
-            fontSize: 20,
+            fontSize: 24,
             fontWeight: rawTheme.typography.fontWeightLight,
         },
         h6: {
             ...rawTheme.typography.h6,
             ...fontHeader,
-            fontSize: 18,
+            fontSize: 22,
         },
         subtitle1: {
             ...rawTheme.typography.subtitle1,
-            fontSize: 18,
+            fontSize: 22,
         },
         body1: {
             ...rawTheme.typography.body2,
             fontWeight: rawTheme.typography.fontWeightRegular,
-            fontSize: 16,
+            fontSize: 20,
         },
         body2: {
             ...rawTheme.typography.body1,
-            fontSize: 14,
+            fontSize: 18,
         },
     },
 };

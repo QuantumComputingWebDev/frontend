@@ -6,7 +6,7 @@ import "../styles/IntroSection.scss";
 
 export default function IntroSection() {
     return (
-        <Paper component={Stack}
+        <Box component={Stack}
                direction="column"
                justifyContent="center"
                sx={{
@@ -19,10 +19,6 @@ export default function IntroSection() {
             <div><div /></div>
             <div><div /></div>
             <div><div /></div>
-        </Paper>
+        </Box>
     )
 }
-//     <Typography color="primary.dark" variant="h2" align="center">
-//         <div>Quantum</div>
-//         <div>Computing</div>
-//     </Typography>
