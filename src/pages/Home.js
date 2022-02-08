@@ -1,6 +1,5 @@
 import {TimelineContainer} from "../components/TimelineContainer";
 import {useEffect, useState} from "react";
-import Countdown from "react-countdown";
 import CountdownContainer from "../components/CountdownContainer";
 import BriefAbout from "../components/BriefAbout";
 import IntroSection from "../components/IntroSection";

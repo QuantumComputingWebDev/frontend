@@ -1,19 +1,26 @@
-import CountDown from "./CountDown";
+import * as React from "react";
 import {Box, Button, Toolbar} from "@mui/material";
 import {Link as RouterLink} from "react-router-dom";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
-
+import { useTimer } from 'react-timer-hook';
+import TimerStyled from "./Timer/TimerStyled";
 
 export default function CountdownContainer({date}) {
+    const {
+        seconds,
+        minutes,
+        hours,
+        days,
+        isRunning,
+        start,
+        pause,
+        resume,
+        restart,
+    } = useTimer({ expiryTimestamp: date, onExpire: () => console.warn('onExpire called') });
+
     return (
         <Box sx={{ display: "flex", justifyContent: 'center'}}>
-            <CountDown
-                until={10}
-                onFinish={() => alert('finished')}
-                onPress={() => alert('hello')}
-                size={20}
-            />
+            <TimerStyled days={days} minutes={minutes} hours={hours} seconds={seconds} />
         </Box>
     )
 }
