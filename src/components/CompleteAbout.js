@@ -3,10 +3,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import {Card, CardMedia, Stack} from "@mui/material";
 import RainbowTypography from "./RainbowTypography";
-import Link from "@mui/material/Link";
-import UpLink from "./UpLink";
 
-export default function BriefAbout() {
+export default function CompleteAbout() {
     return (
         <Container>
             <Grid container>
@@ -26,7 +24,6 @@ export default function BriefAbout() {
                                 Registration is only allowed for employees of Hezardastan Holding and its subsidiaries but the resources,
                                 consisting of recorded videos of the sessions, hands-on problems and etc. are publicly available.
                             </RainbowTypography>
-                            <Link component={UpLink} to="/about">Read More</Link>
                         </Box>
                     </Box>
                 </Grid>

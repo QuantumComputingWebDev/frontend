@@ -31,3 +31,7 @@
     /*transform: scaleY(0);*/
     transition: 0.5s ease;
 }
+
+.golden-overlay-content {
+    background-color: #645701;
+}

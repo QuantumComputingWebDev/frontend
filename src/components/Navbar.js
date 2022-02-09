@@ -1,8 +1,10 @@
-import {Link as RouterLink} from 'react-router-dom';
-import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import {AppBar} from "@mui/material";
+import {openRegisterDialog} from "./RegisterDialog";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import UpLink from "./UpLink";
 
 const rightLink = {
     fontSize: 16,
@@ -10,18 +12,32 @@ const rightLink = {
     ml: 3,
 };
 
-function StyledLink(props) {
-    return <Link
-        component={RouterLink}
+function StyledScrollLink(props) {
+    return <Typography
+        component="a"
         variant="h6"
         underline="none"
         color="inherit"
         sx={{ fontSize: 24 }}
-        className="hoverYellow"
+        style={{textDecoration: "none"}}
         {...props}
     >
         {props.children}
-    </Link>
+    </Typography>
+}
+
+function StyledLink(props) {
+    return <UpLink
+        variant="h6"
+        underline="none"
+        color="inherit"
+        sx={{ fontSize: 24 }}
+        style={{textDecoration: "none"}}
+        onClick={()=>window.scrollTo(0, 0)}
+        {...props}
+    >
+        {props.children}
+    </UpLink>
 }
 
 export default function Navbar() {
@@ -30,11 +46,13 @@ export default function Navbar() {
             <AppBar position="fixed">
                 <Toolbar sx={{ justifyContent: 'space-between' }}>
                     <Box sx={{ flex: 1 }} />
-                    <StyledLink to="/">Quantum Computing</StyledLink>
+                    <StyledLink to="/" className="hoverYellow">Quantum Computing</StyledLink>
                     <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                        <StyledLink to="/about" sx={rightLink}>About</StyledLink>
-                        <StyledLink to="/staff" sx={rightLink}>Staff</StyledLink>
-                        <StyledLink to="/register" sx={rightLink}>Register</StyledLink>
+                        <Button component={StyledScrollLink} href="/#intro" sx={rightLink} className="hoverYellow">Home</Button>
+                        <Button component={StyledScrollLink} href="/#about" sx={rightLink} className="hoverYellow">About</Button>
+                        <Button component={StyledScrollLink} href="/#speakers" sx={rightLink} className="hoverYellow">Speakers</Button>
+                        <Button component={StyledScrollLink} href="/#staff" sx={rightLink} className="hoverYellow">Staff</Button>
+                        <Button onClick={openRegisterDialog} sx={rightLink} className="hoverYellow">Register</Button>
                     </Box>
                 </Toolbar>
             </AppBar>

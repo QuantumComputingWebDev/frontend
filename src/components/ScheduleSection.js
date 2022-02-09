@@ -38,7 +38,7 @@ export default function ScheduleSection() {
     useEffect(()=>requestForItems(setItems),[])
 
     return (
-        <Box sx={{pt: 10, pb: 5}}>
+        <Box>
             <CountdownContainer date={Date.now() + 100000} />
             <TimelineContainer items={items || []} />
         </Box>

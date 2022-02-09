@@ -18,9 +18,9 @@ const rawTheme = createTheme({
             dark: '#ffb25e',
         },
         error: {
-            light: red[50],
-            main: red[500],
-            dark: red[700],
+            light: '#ad0f0f',
+            main: '#ad0f0f',
+            dark: '#ad0f0f',
         },
         success: {
             light: green[50],

@@ -1,7 +1,5 @@
 import * as React from "react";
 import {Box, Button, Toolbar} from "@mui/material";
-import {Link as RouterLink} from "react-router-dom";
-import Typography from "@mui/material/Typography";
 import { useTimer } from 'react-timer-hook';
 import TimerStyled from "./Timer/TimerStyled";
 
