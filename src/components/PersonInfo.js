@@ -1,6 +1,7 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import {Card, CardMedia, Stack} from "@mui/material";
+import {Card, Stack} from "@mui/material";
+import LazyCardMedia from "./LazyCardMedia";
 import Box from "@mui/material/Box";
 import RainbowTypography from "./RainbowTypography";
 import Link from "@mui/material/Link";
@@ -11,7 +12,7 @@ export default function PersonInfo({name, about, src, title, id, more}) {
             <Grid container>
                 <Grid item md={5}>
                     <Card>
-                        <CardMedia component="img" image={src} alt={name} />
+                        <LazyCardMedia component="img" image={src} alt={name} />
                     </Card>
                 </Grid>
                 <Grid item md={7} sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>

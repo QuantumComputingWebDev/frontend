@@ -1,4 +1,6 @@
-import {Card, CardMedia, Typography} from "@mui/material";
+import {Card, Typography} from "@mui/material";
+import LazyCardMedia from "./LazyCardMedia";
+
 import Box from "@mui/material/Box";
 import "../styles/IntroductoryCard.css";
 import {useNavigate} from "react-router-dom";
@@ -12,7 +14,7 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
         <div>
             <Box sx={{ boxShadow: 3 }}>
                 <Card className="overlay-container" onClick={go}>
-                    <CardMedia component="img" image={src} alt={name} />
+                    <LazyCardMedia component="img" image={src} alt={name} />
                     <Box className={`overlay-content ${moreInfo ? "golden-overlay-content" : ""}`} sx={{ display: "flex", flexDirection: 'column-reverse' }}>
                         <Typography variant="h4" color="secondary.light">{title}</Typography>
                     </Box>

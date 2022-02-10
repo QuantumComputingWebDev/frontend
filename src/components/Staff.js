@@ -1,8 +1,16 @@
 import IntroductoryCard from "./IntroductoryCard";
 import {useEffect, useState} from "react";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import RainbowTypography from "./RainbowTypography";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from "swiper";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 function requestForStaff(setStaff) {
     const items = [
@@ -52,7 +60,6 @@ function requestForStaff(setStaff) {
     setStaff(items)
 }
 
-
 export default function Speakers() {
     const [staff, setStaff] = useState(null)
     useEffect(()=>requestForStaff(setStaff),[])
@@ -61,15 +68,36 @@ export default function Speakers() {
     return (
         <Container sx={{ display: "fluid", justifyContent: "center" }}>
             <RainbowTypography variant="h1" textAlign="center" sx={{ pb: 5 }} color="secondary.light">Staff</RainbowTypography>
-            <Grid container spacing={5}>
+            <Swiper
+                modules={[Navigation]}
+                spaceBetween={50}
+                autoplay={{ delay: 3000 }}
+                loop={true}
+                allowTouchMove={false}
+                speed={600}
+                navigation
+                breakpoints={{
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 2,
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    720: {
+                        slidesPerView: 4,
+                    }
+                }}
+            >
                 {
                     staff.map(item =>(
-                        <Grid item sx={{ width: "14vw" }}>
-                            <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id} />
-                        </Grid>
+                        <SwiperSlide>
+                            <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id}/>
+                        </SwiperSlide>
                     ))
                 }
-            </Grid>
+            </Swiper>
         </Container>
     )
 }

@@ -1,7 +1,8 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import {Card, CardMedia, Stack} from "@mui/material";
+import {Card, Stack} from "@mui/material";
+import LazyCardMedia from "./LazyCardMedia";
 import RainbowTypography from "./RainbowTypography";
 import Link from "@mui/material/Link";
 import UpLink from "./UpLink";
@@ -32,7 +33,7 @@ export default function BriefAbout() {
                 </Grid>
                 <Grid item md={5}>
                     <Card>
-                        <CardMedia component="img" image="/images/about.jpg" alt="poster" />
+                        <LazyCardMedia component="img" image="/images/about.jpg" alt="poster" />
                     </Card>
                 </Grid>
             </Grid>

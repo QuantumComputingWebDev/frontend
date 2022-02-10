@@ -1,7 +1,8 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import {Card, CardMedia, Stack} from "@mui/material";
+import {Card, Stack} from "@mui/material";
+import LazyCardMedia from "./LazyCardMedia";
 import {useState} from "react";
 import RainbowTypography from "./RainbowTypography";
 
@@ -17,7 +18,7 @@ export default function Companies() {
                 onMouseLeave={() => setInfo(defaultInfo)}
                 sx={{ width: "22vw" }}
             >
-                <CardMedia component="img" image={src} alt="sponser"/>
+                <LazyCardMedia component="img" image={src} alt="sponser"/>
            </Card>
         )
     };

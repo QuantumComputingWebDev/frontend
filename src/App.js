@@ -17,8 +17,16 @@ import People from "./pages/People";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 
+import SwiperCore, { Autoplay } from 'swiper'
+import {useEffect} from "react";
+
+function config() {
+    SwiperCore.use([Autoplay])
+}
 
 function App() {
+    useEffect(config, [])
+
     return (
        <BrowserRouter>
             <ThemeProvider theme={theme}>

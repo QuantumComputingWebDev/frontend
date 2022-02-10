@@ -46,10 +46,10 @@ export default function Speakers() {
     return (
         <Container sx={{ display: "fluid", justifyContent: "center" }}>
             <RainbowTypography variant="h1" textAlign="center" sx={{ pb: 5 }} color="secondary.light">Speakers</RainbowTypography>
-            <Grid container spacing={5}>
+            <Grid container spacing={5} sx={{ display: "fluid", justifyContent: "center" }}>
                 {
                     speakers.map(item =>(
-                        <Grid item sx={{ width: "17vw" }}>
+                        <Grid item md={4}>
                             <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id}/>
                         </Grid>
                     ))
