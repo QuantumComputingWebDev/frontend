@@ -5,60 +5,13 @@ import RainbowTypography from "./RainbowTypography";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from "swiper";
+import {requestForStaff} from "../api/dummy";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-
-function requestForStaff(setStaff) {
-    const items = [
-        {
-            moreInfo: false,
-            name: "Shayan",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-        {
-            moreInfo: false,
-            name: "Shayan 2",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-        {
-            moreInfo: true,
-            name: "Shayan 3",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-        {
-            moreInfo: true,
-            name: "Shayan 4",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-        {
-            moreInfo: true,
-            name: "Shayan 5",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-        {
-            moreInfo: true,
-            name: "Shayan 6",
-            title: "Poor Frontend Developer",
-            src: "/images/sample-staff.jpeg",
-            id: 1
-        },
-    ]
-    setStaff(items)
-}
 
 export default function Speakers() {
     const [staff, setStaff] = useState(null)

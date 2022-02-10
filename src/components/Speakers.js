@@ -3,40 +3,7 @@ import {useEffect, useState} from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import RainbowTypography from "./RainbowTypography";
-
-function requestForSpeakers(setSpeakers) {
-    const items = [
-        {
-            name: "Ali Hamed Moosavian",
-            title: "title",
-            src: "/images/Ali Hamed Moosavian.jpg",
-            id: 2,
-            moreInfo: true
-        },
-        {
-            name: "Leila Taghavi",
-            title: "title",
-            src: "/images/Leila Taghavi.png",
-            id: 3,
-            moreInfo: true
-        },
-        {
-            name: "Min-Hsiu Hsieh",
-            title: "title",
-            src: "/images/Min-Hsiu Hsieh.png",
-            id: 4
-        },
-        {
-            name: "Saleh Rahimi Keshari",
-            title: "title",
-            src: "/images/Saleh Rahimi Keshari.png",
-            id: 5,
-            moreInfo: false
-        },
-    ]
-    setSpeakers(items)
-}
-
+import {requestForSpeakers} from "../api/dummy";
 
 export default function Speakers() {
     const [speakers, setSpeakers] = useState(null)

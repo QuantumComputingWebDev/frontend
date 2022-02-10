@@ -33,7 +33,7 @@ export default function BriefAbout() {
                 </Grid>
                 <Grid item md={5}>
                     <Card>
-                        <LazyCardMedia component="img" image="/images/about.jpg" alt="poster" />
+                        <LazyCardMedia component="img" image="/images/about.jpeg" alt="poster" />
                     </Card>
                 </Grid>
             </Grid>

@@ -1,8 +1,11 @@
 .intro-section-container {
   background: url("../../public/images/back-ray.svg");
   overflow: hidden;
+}
 
-
+.atom-container {
+  position: relative;
+  padding: 100px;
   > div {
     border-radius: 50%;
     border: 3px solid #497e43;

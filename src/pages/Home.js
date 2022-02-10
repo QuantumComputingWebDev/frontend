@@ -12,13 +12,13 @@ export default function Home() {
             <div id="intro"><IntroSection id="intro" /></div>
             <Spacer space={5} />
             <div id="timeline"><ScheduleSection id="timeline" /></div>
-            <Spacer space={5} />
+            <Spacer space={10} />
             <div id="about"><BriefAbout /></div>
-            <Spacer space={5} />
+            <Spacer space={10} />
             <div id="speakers"><Speakers id="speakers" /></div>
-            <Spacer space={5} />
+            <Spacer space={10} />
             <div id="staff"><Staff id="staff" /></div>
-            <Spacer space={5} />
+            <Spacer space={10} />
             <div id="companies"><Companies id="companies" /></div>
             <Spacer space={5} />
         </>
