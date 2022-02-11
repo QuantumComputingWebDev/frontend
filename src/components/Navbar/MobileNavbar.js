@@ -51,16 +51,13 @@ export default function MobileNavbar() {
     };
 
     return (
-        <div>
-            <AppBar position="fixed">
-                <Toolbar sx={{ justifyContent: 'space-between' }} variant="dense">
-                    <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} onClick={toggleDrawer}>
-                        <MenuIcon />
-                    </IconButton>
-                    <StyledLink to="/" className="hoverYellow"><Typography variant="h6">Quantum Computing</Typography></StyledLink>
-                </Toolbar>
-            </AppBar>
-
+        <AppBar position="sticky">
+            <Toolbar sx={{ justifyContent: 'space-between' }} variant="dense">
+                <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} onClick={toggleDrawer}>
+                    <MenuIcon />
+                </IconButton>
+                <StyledLink to="/" className="hoverYellow"><Typography variant="h6">Quantum Computing</Typography></StyledLink>
+            </Toolbar>
             <div>
                 <SwipeableDrawer
                     anchor={"left"}
@@ -93,6 +90,6 @@ export default function MobileNavbar() {
                     </Box>
                 </SwipeableDrawer>
             </div>
-        </div>
+        </AppBar>
     );
 }
