@@ -1,9 +1,10 @@
 import Grid from "@mui/material/Grid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import {Divider, Stack, Typography} from "@mui/material";
+import {Divider, Stack, Typography, useMediaQuery} from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import Avatar from "@mui/material/Avatar";
 
 function ContactItem({label, children}) {
     return (
@@ -22,10 +23,12 @@ function SocialItem({link, children}) {
 }
 
 export default function Footer() {
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('md'));
+
     return (
         <Box sx={{ backgroundColor: "primary.dark", color: "secondary.light", pb: 3, pt: 5}}>
             <Grid container spacing={2} >
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                     <Box sx={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -47,8 +50,23 @@ export default function Footer() {
                         </Box>
                     </Box>
                 </Grid>
-
-                <Grid item xs={6}>
+                <Grid item xs={4}>
+                    <Box sx={{ display: "flex", justifyContent: "center"}}>
+                        <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: matches ? "column" : "row"}}>
+                            <Avatar
+                                alt="daneshkade bargh"
+                                src="/images/bargh.png"
+                                sx={{width: 80, height: 80}}
+                            />
+                            <Avatar
+                                alt="daneshgah sharif"
+                                src="/images/sharif.png"
+                                sx={{width: 80, height: 80}}
+                            />
+                        </Box>
+                    </Box>
+                </Grid>
+                <Grid item xs={4}>
                     <Box sx={{
                         display: 'flex',
                         flexDirection: 'column',
