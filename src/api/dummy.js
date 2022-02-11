@@ -66,6 +66,137 @@ const people = [
 
 ]
 
+const events = [
+    {
+        dayCount: 1,
+        dateText: "15 Dec",
+        events: [
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker: {
+                    name: "Ali Hamed Moosavian",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Ali Hamed Moosavian.jpg",
+                    more: "https://linkedin.com/",
+                    id: 1,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker: {
+                    name: "Ali Hamed Moosavian",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Ali Hamed Moosavian.jpg",
+                    more: "https://linkedin.com/",
+                    id: 1,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker: {
+                    name: "Ali Hamed Moosavian",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Ali Hamed Moosavian.jpg",
+                    more: "https://linkedin.com/",
+                    id: 1,
+                },
+            }
+        ]
+    },
+    {
+        dayCount: 2,
+        dateText: "16 Dec",
+        events: [
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker:     {
+                    name: "Aram Harrow",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Aram Harrow.jpg",
+                    more: "https://linkedin.com/",
+                    id: 2,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker:     {
+                    name: "Aram Harrow",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Aram Harrow.jpg",
+                    more: "https://linkedin.com/",
+                    id: 2,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker: {
+                    name: "Aram Harrow",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Aram Harrow.jpg",
+                    more: "https://linkedin.com/",
+                    id: 2,
+                },
+            }
+        ]
+    },
+    {
+        dayCount: 3,
+        dateText: "17 Dec",
+        events: [
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker:     {
+                    name: "Jacob Biamonte",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Jacob Biamonte.jpeg",
+                    more: "https://linkedin.com/",
+                    id: 3,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker:     {
+                    name: "Jacob Biamonte",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Jacob Biamonte.jpeg",
+                    more: "https://linkedin.com/",
+                    id: 3,
+                },
+            },
+            {
+                timeText: "5:00 - 6:00 PM",
+                title: "The future of Retinal Implants",
+                speaker:     {
+                    name: "Jacob Biamonte",
+                    title: "title",
+                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    src: "/images/Jacob Biamonte.jpeg",
+                    more: "https://linkedin.com/",
+                    id: 3,
+                },
+            }
+        ]
+    },
+]
+
+const registrationEnd = new Date(2022, 3, 1)
+
 const speakers = [1, 2, 3, 4, 5, 6, 7, 8]
 const staff = [1, 2, 3, 4, 5, 6, 7, 8]
 
@@ -93,33 +224,11 @@ export function requestForStaff(setStaff) {
 }
 
 export async function requestForEvents(setEvents) {
-    const items = [
-        {
-            dateText: "04/2009 – 11/2010",
-            title: "Start of Registeration",
-            body: "Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla exercitation. " +
-                "Veniam velit adipisicing anim excepteur nostrud magna nostrud aliqua dolor. " +
-                "Sunt aute est duis ut nulla officia irure reprehenderit laborum fugiat dolore in elit. " +
-                "Adipisicing do qui duis Lore est."
-        },
-        {
-            dateText: "05/2009 – 11/2010",
-            title: "Start of Seminars",
-            body: "Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla exercitation. " +
-                "Veniam velit adipisicing anim excepteur nostrud magna nostrud aliqua dolor. " +
-                "Sunt aute est duis ut nulla officia irure reprehenderit laborum fugiat dolore in elit. " +
-                "Adipisicing do qui duis Lore est."
-        },
-        {
-            dateText: "06/2009 – 11/2010",
-            title: "End of the program",
-            body: "Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla exercitation. " +
-                "Veniam velit adipisicing anim excepteur nostrud magna nostrud aliqua dolor. " +
-                "Sunt aute est duis ut nulla officia irure reprehenderit laborum fugiat dolore in elit. " +
-                "Adipisicing do qui duis Lore est."
-        }
-    ]
-    setEvents(items)
+    setEvents(events)
+}
+
+export async function requestForRegistrationEnd(setTime) {
+    setTime(registrationEnd)
 }
 
 export function requestForPerson(id, setPerson) {
