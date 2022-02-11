@@ -36,7 +36,7 @@ export default function Footer() {
                         px: 5
                     }}
                     >
-                        <Typography variant="h5">Social Media</Typography>
+                        <Typography variant="h5" textAlign="center">Social Media</Typography>
                         <Box sx={{pt: 4}}>
                             <SocialItem link="https://twitter.com/phanous_ir">
                                 <FontAwesomeIcon icon={faTwitter} size="2x" className="hoverYellow" />
@@ -74,7 +74,7 @@ export default function Footer() {
                         px: 5
                     }}
                     >
-                        <Typography variant="h5">Contact Us</Typography>
+                        <Typography variant="h5" textAlign="center">Contact Us</Typography>
                         <Stack>
                             <ContactItem label="Address">
                                 {"No. 8, 2nd Peyvand, Farhang Sq."}
