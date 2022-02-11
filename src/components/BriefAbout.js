@@ -22,10 +22,9 @@ export default function BriefAbout() {
                         >
                             <RainbowTypography variant="h4">About the event</RainbowTypography>
                             <RainbowTypography variant="p" sx={{lineHeight: 2}}>
-                                This is an introductory crash course in quantum computing with some hands-on materials.
-                                This course is suitable for people with a background in tech, with a minimum knowledge of programming and linear algebra.
-                                Registration is only allowed for employees of Hezardastan Holding and its subsidiaries but the resources,
-                                consisting of recorded videos of the sessions, hands-on problems and etc. are publicly available.
+                                In this workshop, we start by briefly reviewing quantum computation and classical machine learning on the first day.
+                                Then we cover basic ideas and methods of quantum machine learning on the second day.
+                                We conclude the workshop by discussing some of the more advanced results in the field that coincide with the research interests of the speakers.
                             </RainbowTypography>
                             <Link component={UpLink} to="/about">Read More</Link>
                         </Box>

@@ -50,10 +50,10 @@ export default function RegisterDialog() {
                     </Typography>
                     <br />
                     <Typography variant="p">
-                        Then, you will receive conformation email from us.
+                        Then, you will receive confirmation email from us that contains instructions and link to enter the seminars.
                     </Typography>
                     <br />
-                    <Typography variant="p"color="warning.main">
+                    <Typography variant="p" color="warning.main">
                         Make sure to enter the correct email!
                     </Typography>
                 </DialogContentText>
