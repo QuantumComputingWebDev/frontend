@@ -52,16 +52,16 @@ export default function Footer() {
                 </Grid>
                 <Grid item xs={4}>
                     <Box sx={{ display: "flex", justifyContent: "center"}}>
-                        <Box sx={{ display: "flex", justifyContent: "space-around", flexDirection: matches ? "column" : "row"}}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", flexDirection: matches ? "column" : "row"}}>
                             <Avatar
                                 alt="daneshkade bargh"
                                 src="/images/bargh.png"
-                                sx={{width: 80, height: 80}}
+                                sx={{width: 90, height: 90, p: 1}}
                             />
                             <Avatar
                                 alt="daneshgah sharif"
                                 src="/images/sharif.png"
-                                sx={{width: 80, height: 80}}
+                                sx={{width: 90, height: 90, p: 1}}
                             />
                         </Box>
                     </Box>

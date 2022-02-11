@@ -13,7 +13,7 @@ export default function ScheduleSection() {
     const [countDownTime, setCountDownTime] = useState(null)
     const [activeIndex, setActiveIndex] = useState(0)
     useEffect(()=>requestForEvents(setEvents),[])
-    useEffect(()=>requestForRegistrationEnd(setCountDownTime()),[])
+    useEffect(()=>requestForRegistrationEnd(setCountDownTime),[])
 
     if(events === null || countDownTime === null)
         return <></>

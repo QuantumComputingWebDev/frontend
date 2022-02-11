@@ -195,7 +195,7 @@ const events = [
     },
 ]
 
-const registrationEnd = new Date(2022, 3, 1)
+const registrationEnd = new Date(2022, 3, 1).getTime() // timestamp
 
 const speakers = [1, 2, 3, 4, 5, 6, 7, 8]
 const staff = [1, 2, 3, 4, 5, 6, 7, 8]
