@@ -8,7 +8,7 @@
   padding: 100px;
   > div {
     border-radius: 50%;
-    border: 3px solid #497e43;
+    border: 6px solid #45963b;
     transform-style: preserve-3d;
     transform: rotateX(80deg) rotateY(20deg);
     position: absolute;
@@ -23,10 +23,10 @@
         position: absolute;
         height: 40px;
         width: 40px;
-        background: #497e43;
+        background: #45963b;
         border-radius: 50%;
         transform: rotateX(-80deg) rotateY(0);
-        box-shadow: 0 0 25px #497e43;
+        box-shadow: 0 0 25px #45963b;
         animation: nucleus_ 2s infinite linear;
         left: 50%;
         top: 50%;
@@ -73,7 +73,7 @@
         content: "";
         position: absolute;
         top: -5px;
-        box-shadow: 0 0 12px #70b6ef;
+        box-shadow: 0 0 15px #70b6ef;
         left: 50%;
         margin-left: -5px;
         width: 5px;

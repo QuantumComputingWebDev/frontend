@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typography from "@mui/material/Typography";
 
 const Container = styled.div`
   display: flex;
@@ -55,7 +56,7 @@ export default function Digit({ value, title }) {
     const rightDigit = value >= 10 ? value.toString()[1] : value.toString();
     return (
         <Container>
-            <Title>{title}</Title>
+            <Typography variant="h6">{title}</Typography>
             <DigitContainer>
                 <SingleDigit>
                     {leftDigit}

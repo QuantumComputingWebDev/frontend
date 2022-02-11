@@ -5,18 +5,18 @@ import {responsiveFontSizes} from "@mui/material";
 const rawTheme = createTheme({
     palette: {
         primary: {
-            light: '#69696a',
-            main: '#28282a',
-            dark: '#1e1e1f',
+            light: '#d9d9ea',
+            main: '#7a7ad5',
+            dark: '#20205e',
         },
         secondary: {
-            light: '#fff5f8',
-            main: '#ff3366',
-            dark: '#e62958',
+            light: '#F28C77',
+            main: '#F6A167',
+            dark: '#f6c467',
         },
         warning: {
-            main: '#ffc071',
-            dark: '#ffb25e',
+            main: '#ff8b71',
+            dark: '#ef2e2e',
         },
         error: {
             light: '#ad0f0f',
@@ -34,6 +34,9 @@ const rawTheme = createTheme({
         fontWeightLight: 300, // Work Sans
         fontWeightRegular: 400, // Work Sans
         fontWeightMedium: 700, // Roboto Condensed
+        allVariants: {
+            color: "white"
+        }
     },
 });
 
@@ -53,9 +56,32 @@ const addBacktheme = {
         background: {
             ...rawTheme.palette.background,
             default: rawTheme.palette.common.white,
-            placeholder: grey[200],
+            placeholder: "#c9b5b5",
         },
-    }
+    },
+    // typography: {
+    //     p: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h1: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h2: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h3: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h4: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h5: {
+    //         color: "#c9b5b5"
+    //     },
+    //     h6: {
+    //         color: "#c9b5b5"
+    //     },
+    // },
 };
 
 const theme = responsiveFontSizes(addBacktheme)

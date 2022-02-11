@@ -20,8 +20,24 @@ body {
   /*background-size: 20px 35px;*/
   /*background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;*/
 
-  background: rgb(113,174,199);
-  background: linear-gradient(164deg, rgba(113,174,199,1) 0%, rgba(23,50,56,1) 79%);
+  background: #001323 !important;
+}
+
+.header-image {
+  position: absolute;
+  mix-blend-mode: luminosity;
+  width: 100vw;
+  height: 200vh;
+  top: 0;
+  z-index: -1;
+}
+.footer-image {
+  position: absolute;
+  mix-blend-mode: luminosity;
+  width: 100vw;
+  height: 200vh;
+  bottom: 100px;
+  z-index: -1;
 }
 
 .hoverYellow {
