@@ -9,7 +9,7 @@ export default function FullCenterPage(props) {
              direction="column"
              justifyContent="center"
              sx={{
-                 height: "100vh",
+                 minHeight: "100vh",
                  ...(props.sx || {})
              }}
         >
