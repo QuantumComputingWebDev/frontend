@@ -34,7 +34,7 @@ export default function RegisterDialog() {
     const ok = emailRegex.test(email)
     function submitRegisterDialog() {
         if(ok) {
-            window.location = "https://www.google.com"; // this is the redirecting url
+            window.location = "https://idpay.ir/resana24/shop/504121"; // this is the redirecting url
         } else {
             throwError("email is not valid!")
         }
