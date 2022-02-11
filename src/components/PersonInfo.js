@@ -10,12 +10,12 @@ export default function PersonInfo({name, about, src, title, id, more}) {
     return (
         <Container>
             <Grid container>
-                <Grid item md={5}>
+                <Grid item xs={5}>
                     <Card>
                         <LazyCardMedia component="img" image={src} alt={name} />
                     </Card>
                 </Grid>
-                <Grid item md={7} sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                <Grid item xs={7} sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
                     <Box
                         sx={{
                             display: 'flex',

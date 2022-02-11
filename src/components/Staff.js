@@ -27,18 +27,15 @@ export default function Speakers() {
                 autoplay={{ delay: 3000 }}
                 loop={true}
                 allowTouchMove={false}
+                slidesPerView={2}
                 speed={600}
                 navigation
                 breakpoints={{
                     // when window width is >= 320px
-                    320: {
-                        slidesPerView: 2,
-                    },
-                    // when window width is >= 640px
-                    640: {
+                    600: {
                         slidesPerView: 3,
                     },
-                    720: {
+                    900: {
                         slidesPerView: 4,
                     }
                 }}

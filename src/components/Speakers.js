@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import RainbowTypography from "./RainbowTypography";
 import {requestForSpeakers} from "../api/dummy";
+import {Box} from "@mui/material";
 
 export default function Speakers() {
     const [speakers, setSpeakers] = useState(null)
@@ -16,8 +17,10 @@ export default function Speakers() {
             <Grid container spacing={5} sx={{ display: "fluid", justifyContent: "center" }}>
                 {
                     speakers.map(item =>(
-                        <Grid item md={4}>
-                            <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id}/>
+                        <Grid item sm={4} xs={6}>
+                            <Box>
+                                <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id} />
+                            </Box>
                         </Grid>
                     ))
                 }

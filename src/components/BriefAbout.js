@@ -11,7 +11,7 @@ export default function BriefAbout() {
     return (
         <Container>
             <Grid container>
-                <Grid item md={7} sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                <Grid item xs={7} sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
                     <Box component={Stack} direction="column" justifyContent="center" sx={{ flexGrow: 1 }}>
                         <Box
                             sx={{
@@ -31,7 +31,7 @@ export default function BriefAbout() {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item md={5}>
+                <Grid item xs={5}>
                     <Card>
                         <LazyCardMedia component="img" image="/images/about.jpeg" alt="poster" />
                     </Card>

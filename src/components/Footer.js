@@ -25,7 +25,7 @@ export default function Footer() {
     return (
         <Box sx={{ backgroundColor: "primary.dark", color: "secondary.light", pb: 3, pt: 5}}>
             <Grid container spacing={2} >
-                <Grid item md={6}>
+                <Grid item xs={6}>
                     <Box sx={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -48,7 +48,7 @@ export default function Footer() {
                     </Box>
                 </Grid>
 
-                <Grid item md={6}>
+                <Grid item xs={6}>
                     <Box sx={{
                         display: 'flex',
                         flexDirection: 'column',

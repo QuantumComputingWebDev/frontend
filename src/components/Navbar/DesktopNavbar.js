@@ -1,13 +1,12 @@
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import {AppBar} from "@mui/material";
-import {openRegisterDialog} from "./RegisterDialog";
+import {openRegisterDialog} from "../RegisterDialog";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import UpLink from "./UpLink";
+import UpLink from "../UpLink";
 
 const rightLink = {
-    fontSize: 16,
     color: 'common.white',
     ml: 3,
 };
@@ -15,7 +14,6 @@ const rightLink = {
 function StyledScrollLink(props) {
     return <Typography
         component="a"
-        variant="h6"
         underline="none"
         color="inherit"
         sx={{ fontSize: 24 }}
@@ -28,10 +26,8 @@ function StyledScrollLink(props) {
 
 function StyledLink(props) {
     return <UpLink
-        variant="h6"
         underline="none"
         color="inherit"
-        sx={{ fontSize: 24 }}
         style={{textDecoration: "none"}}
         onClick={()=>window.scrollTo(0, 0)}
         {...props}
@@ -40,13 +36,13 @@ function StyledLink(props) {
     </UpLink>
 }
 
-export default function Navbar() {
+export default function DesktopNavbar() {
     return (
         <div>
             <AppBar position="fixed">
-                <Toolbar sx={{ justifyContent: 'space-between' }}>
+                <Toolbar sx={{ justifyContent: 'space-between' }} variant="dense">
                     <Box sx={{ flex: 1 }} />
-                    <StyledLink to="/" className="hoverYellow">Quantum Computing</StyledLink>
+                    <StyledLink to="/" className="hoverYellow"><Typography variant="h6">Quantum Computing</Typography></StyledLink>
                     <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
                         <Button component={StyledScrollLink} href="/#intro" sx={rightLink} className="hoverYellow">Home</Button>
                         <Button component={StyledScrollLink} href="/#about" sx={rightLink} className="hoverYellow">About</Button>
