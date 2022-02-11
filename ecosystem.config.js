@@ -1,10 +1,7 @@
 module.exports = {
-    apps: [
-        {
-            name: 'frontend',
-            script: 'sudo serve -s build -l 80',
-            instances: 'max',
-            exec_mode: 'cluster'
-        }
-    ]
+    script: "serve",
+    env: {
+        PM2_SERVE_PATH: 'build',
+        PM2_SERVE_PORT: 8080
+    }
 }
