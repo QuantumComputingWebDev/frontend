@@ -5,6 +5,7 @@ import {Divider, Stack, Typography, useMediaQuery} from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Avatar from "@mui/material/Avatar";
+import Container from "@mui/material/Container";
 
 function ContactItem({label, children}) {
     return (
@@ -23,76 +24,82 @@ function SocialItem({link, children}) {
 }
 
 export default function Footer() {
-    const matches = useMediaQuery((theme) => theme.breakpoints.down('md'));
+    const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
+    const avatarBox = (
+        <Box sx={{ display: "flex", justifyContent: "space-around" }}>
+            <Avatar
+                alt="daneshkade bargh"
+                src="/images/bargh.png"
+                sx={{width: 80, height: 80, p: 1}}
+            />
+            <Avatar
+                alt="daneshgah sharif"
+                src="/images/sharif.png"
+                sx={{width: 80, height: 80, p: 1}}
+            />
+        </Box>
+    )
+    const socialMediaBox = (
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+        }}
+        >
+            <Typography variant="h5" textAlign="center">Social Media</Typography>
+            <Box sx={{pt: 4}}>
+                <SocialItem link="https://twitter.com/phanous_ir">
+                    <FontAwesomeIcon icon={faTwitter} size="2x" className="hoverYellow" />
+                </SocialItem>
+                <SocialItem link="https://linkedin.com/company/phanous">
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" className="hoverYellow" />
+                </SocialItem>
+                <SocialItem link="https://instagram.com/phanous_ir">
+                    <FontAwesomeIcon icon={faInstagram} size="2x" className="hoverYellow" />
+                </SocialItem>
+            </Box>
+        </Box>
+    )
+
+    const contactUsBox = (
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            px: 5
+        }}
+        >
+            <Typography variant="h5" textAlign="center">Contact Us</Typography>
+            <Stack>
+                <ContactItem label="Address">
+                    {"No. 8, 2nd Peyvand, Farhang Sq."}
+                    {"Saadatabad, Tehran, Iran"}
+                </ContactItem>
+                <Divider />
+                <ContactItem label="Email">
+                    public@phanous.ir
+                </ContactItem>
+            </Stack>
+        </Box>
+    )
+
+    const copyRightBox = (
+        <Typography variant="h6" textAlign="center" color="primary.light">
+            Copyright © 2022
+        </Typography>
+    )
 
     return (
         <Box sx={{ backgroundColor: "primary.dark", color: "secondary.light", pb: 3, pt: 5}}>
-            <Grid container spacing={2} >
-                <Grid item xs={4}>
-                    <Box sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        px: 5
-                    }}
-                    >
-                        <Typography variant="h5" textAlign="center">Social Media</Typography>
-                        <Box sx={{pt: 4}}>
-                            <SocialItem link="https://twitter.com/phanous_ir">
-                                <FontAwesomeIcon icon={faTwitter} size="2x" className="hoverYellow" />
-                            </SocialItem>
-                            <SocialItem link="https://linkedin.com/company/phanous">
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" className="hoverYellow" />
-                            </SocialItem>
-                            <SocialItem link="https://instagram.com/phanous_ir">
-                                <FontAwesomeIcon icon={faInstagram} size="2x" className="hoverYellow" />
-                            </SocialItem>
-                        </Box>
-                    </Box>
+            <Container>
+                <Grid container spacing={2} >
+                    <Grid item xs={6} md={4}>{socialMediaBox}</Grid>
+                    {matches ? <Grid item xs={4}>{avatarBox}</Grid> : []}
+                    <Grid item xs={6} md={4}>{contactUsBox}</Grid>
                 </Grid>
-                <Grid item xs={4}>
-                    <Box sx={{ display: "flex", justifyContent: "center"}}>
-                        <Box sx={{ display: "flex", justifyContent: "space-between", flexDirection: matches ? "column" : "row"}}>
-                            <Avatar
-                                alt="daneshkade bargh"
-                                src="/images/bargh.png"
-                                sx={{width: 90, height: 90, p: 1}}
-                            />
-                            <Avatar
-                                alt="daneshgah sharif"
-                                src="/images/sharif.png"
-                                sx={{width: 90, height: 90, p: 1}}
-                            />
-                        </Box>
-                    </Box>
-                </Grid>
-                <Grid item xs={4}>
-                    <Box sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        px: 5
-                    }}
-                    >
-                        <Typography variant="h5" textAlign="center">Contact Us</Typography>
-                        <Stack>
-                            <ContactItem label="Address">
-                                {"No. 8, 2nd Peyvand, Farhang Sq."}
-                                {"Saadatabad, Tehran, Iran"}
-                            </ContactItem>
-                            <Divider />
-                            <ContactItem label="Email">
-                                public@phanous.ir
-                            </ContactItem>
-                        </Stack>
-                    </Box>
-                </Grid>
-            </Grid>
-            <div>
-                <Typography variant="h6" textAlign="center" color="primary.light">
-                    Copyright © 2022
-                </Typography>
-            </div>
+                {matches ? [] : avatarBox}
+                <div>{copyRightBox}</div>
+            </Container>
         </Box>
     )
 }
