@@ -126,7 +126,7 @@ const events = [
     },
     {
         dayCount: 3,
-        dateText: "23 Feb",
+        dateText: "24 Feb",
         events: [
             {
                 timeText: "10:00 - 11:00 AM",
