@@ -14,9 +14,9 @@ export default function Home() {
                 <img src="/images/back-code.png" className="header-image"/>
                 <div id="intro"><IntroSection id="intro" /></div>
                 <Spacer space={5} />
-                <div id="timeline"><ScheduleSection id="timeline" /></div>
-                <Spacer space={10} />
                 <div id="about"><BriefAbout /></div>
+                <Spacer space={10} />
+                <div id="timeline"><ScheduleSection id="timeline" /></div>
                 <Spacer space={10} />
                 <div id="speakers"><Speakers id="speakers" /></div>
                 <Spacer space={10} />

@@ -7,6 +7,7 @@ import {ButtonGroup} from "@mui/material";
 import Button from "@mui/material/Button";
 import RainbowTypography from "./RainbowTypography";
 import Spacer from "./Spacer";
+import Typography from "@mui/material/Typography";
 
 export default function ScheduleSection() {
     const [events, setEvents] = useState(null)
@@ -20,6 +21,7 @@ export default function ScheduleSection() {
 
     return (
         <Box>
+            <Typography variant="h3" sx={{ color: "secondary.main", p: 2}} textAlign="center">Registration Ends In:</Typography>
             <CountdownContainer date={countDownTime} />
             <Spacer space={4} />
             <Box sx={{ display: "flex", justifyContent: "center" }}>
