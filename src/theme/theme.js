@@ -36,7 +36,7 @@ const rawTheme = createTheme({
         fontWeightMedium: 700, // Roboto Condensed
         allVariants: {
             color: "white"
-        }
+        },
     },
 });
 
