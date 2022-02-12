@@ -30,7 +30,7 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Card className="overlay-container" onClick={go} style={imageSize} sx={{ boxShadow: 3 }}>
                     <LazyCardMedia component="img" image={src} alt={name} style={{objectFit: "cover", objectPosition: "0 0", width: "100%", height: "100%"}} />
-                    <Box className={`overlay-content ${moreInfo ? "golden-overlay-content" : ""}`} sx={{ display: "flex", flexDirection: 'column-reverse' }}>
+                    <Box className={`overlay-content ${moreInfo ? "golden-overlay-content" : ""}`} sx={{ display: "flex", flexDirection: 'column-reverse', cursor: "pointer" }}>
                         <Typography variant="h4" color="secondary.light">{title}</Typography>
                     </Box>
                 </Card>

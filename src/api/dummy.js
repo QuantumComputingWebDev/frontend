@@ -1,7 +1,7 @@
 const people = [
     {
         name: "Ali Hamed Moosavian",
-        title: "title",
+        title: "Researcher at QuOne Lab at Phanous Research and Innovation Centre",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         src: "/images/Ali Hamed Moosavian.jpg",
         more: "https://linkedin.com/",
@@ -9,7 +9,7 @@ const people = [
     },
     {
         name: "Aram Harrow",
-        title: "title",
+        title: "Associate Professor of Center for Theoretical Physics Massachusetts Institute of Technology",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         src: "/images/Aram Harrow.jpg",
         more: "https://linkedin.com/",
@@ -17,15 +17,17 @@ const people = [
     },
     {
         name: "Jacob Biamonte",
-        title: "title",
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        title: "Leader of Skoltech’s Quantum Machine Learning Initiative",
+        about: `Jacob Biamonte is an American quantum computer scientist and Associate Professor at the Skolkovo Institute of Science and Technology (founded in collaboration with M.I.T.) and the inaugural Leader of Skoltech’s Quantum Machine Learning Initiative. He has made several contributions to the theory and implementation of quantum computers.
+        Biamonte earned an award winning PhD at the University of Oxford and his collective research was recognized in 2013 with the Shapiro Award in Mathematical Physics. He has advised both government agencies and industry and lead several successful interdisciplinary research teams and projects, comprised of students and research staff with backgrounds spanning physics, mathematics and computer science. He supervised four exceptional PhD students and five extraordinarily talented postdocs, two of which are now Assistant Professors. He was invited to become a lifelong member of the Foundational Questions Institute (FQXi) and serves on the editorial boards of several notable journals. Jacob Biamonte is an American quantum computer scientist and Associate Professor at the Skolkovo Institute of Science and Technology (founded in collaboration with M.I.T.) and the inaugural Leader of Skoltech’s Quantum Machine Learning Initiative. He has made several contributions to the theory and implementation of quantum computers. Biamonte was employed as one of the world's first quantum software programmers at D-Wave Systems Inc. in Vancouver B.C., Canada. From this work, he published several celebrated proofs establishing the computational universality of specific quantum many-body ground states used in adiabatic quantum computing. He played a central role in developing aspects of contemporary quantum computing theory, including research recognized as pioneering the emerging field that unites quantum information with complex network theory and machine learning. Biamonte earned an award winning PhD at the University of Oxford and his collective research was recognized in 2013 with the Shapiro Award in Mathematical Physics. He has advised both government agencies and industry and lead several successful interdisciplinary research teams and projects, comprised of students and research staff with backgrounds spanning physics, mathematics and computer science. He supervised four exceptional PhD students and five extraordinarily talented postdocs, two of which are now Assistant Professors. He was invited to become a lifelong member of the Foundational Questions Institute (FQXi) and serves on the editorial boards of several notable journals.
+        Biamonte was employed as one of the world's first quantum software programmers at D-Wave Systems Inc. in Vancouver B.C., Canada. From this work, he published several celebrated proofs establishing the computational universality of specific quantum many-body ground states used in adiabatic quantum computing. He played a central role in developing aspects of contemporary quantum computing theory, including research recognized as pioneering the emerging field that unites quantum information with complex network theory and machine learning.`,
         src: "/images/Jacob Biamonte.jpeg",
         more: "https://linkedin.com/",
         id: 3,
     },
     {
         name: "Leila Taghavi",
-        title: "title",
+        title: "Postdoctoral Researcher at Phanous Research and Innovation Centre",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         src: "/images/Leila Taghavi.png",
         more: "https://linkedin.com/",
@@ -33,7 +35,7 @@ const people = [
     },
     {
         name: "Min-Hsiu Hsieh",
-        title: "title",
+        title: "Director at Hon Hai (Foxconn) Quantum Computing Research Center, Taiwan",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         src: "/images/Min-Hsiu Hsieh.png",
         more: "https://linkedin.com/",
@@ -41,7 +43,7 @@ const people = [
     },
     {
         name: "Richard Kueng",
-        title: "title",
+        title: "assistant professor (tenure track) for Quantum Computing at the Johannes Kepler University Linz, Austria",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         src: "/images/Richard Kueng.jpg",
         more: "https://linkedin.com/",
@@ -50,175 +52,135 @@ const people = [
     {
         name: "Saleh Rahimi Keshari",
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        title: "title",
+        title: "Assistant Professor at University of Tehran",
         src: "/images/Saleh Rahimi Keshari.png",
         more: "https://linkedin.com/",
         id: 7,
     },
     {
         name: "Vedran Dunjiko",
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        title: "title",
+        about: `I am an Assistant Professor (tenure track) at the Leiden Institute of
+        Advanced Computer Science, Leiden University, and a member of the LIACS
+        theory group. I am also affiliated with the Quantum Software
+        Consortium, and am a co-founder of the  Applied Quantum Algorithms - Leiden  interdepartmental initiative.`,
+        title: "Assistant Professor (tenure track, UD1), lead of aQa group, LIACS & LION, Leiden University",
         src: "/images/Vedran Dunjko.jpg",
         more: "https://linkedin.com/",
         id: 8,
     },
-
+    {
+        name: "Amir Najafi",
+        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        title: "Postdoctoral Researcher, Institute for Research in Fundamental Sciences (IPM)",
+        src: "/images/Ali Najafi.jpg",
+        more: "https://linkedin.com/",
+        id: 9,
+    },
+    {
+        name: "Abolfazl Bayat",
+        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        title: "Research Associate at University College London",
+        src: "/images/Abolfazl Bayat.png",
+        more: "https://linkedin.com/",
+        id: 10,
+    },
 ]
 
 const events = [
     {
         dayCount: 1,
-        dateText: "15 Dec",
+        dateText: "22 Feb",
         events: [
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker: {
-                    name: "Ali Hamed Moosavian",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Ali Hamed Moosavian.jpg",
-                    more: "https://linkedin.com/",
-                    id: 1,
-                },
+                timeText: "2:00 - 3:00 PM",
+                title: "Introduction to Quantum Computation",
+                speaker: people[6],
             },
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker: {
-                    name: "Ali Hamed Moosavian",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Ali Hamed Moosavian.jpg",
-                    more: "https://linkedin.com/",
-                    id: 1,
-                },
+                timeText: "3:10 - 4:10 PM",
+                title: "Introduction to Classical Machine Learning",
+                speaker: people[8],
             },
-            {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker: {
-                    name: "Ali Hamed Moosavian",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Ali Hamed Moosavian.jpg",
-                    more: "https://linkedin.com/",
-                    id: 1,
-                },
-            }
         ]
     },
     {
         dayCount: 2,
-        dateText: "16 Dec",
+        dateText: "23 Feb",
         events: [
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker:     {
-                    name: "Aram Harrow",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Aram Harrow.jpg",
-                    more: "https://linkedin.com/",
-                    id: 2,
-                },
+                timeText: "10:00 - 12:10 PM",
+                title: "Variational Quantum - Classical Algorithms",
+                speaker: people[9],
             },
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker:     {
-                    name: "Aram Harrow",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Aram Harrow.jpg",
-                    more: "https://linkedin.com/",
-                    id: 2,
-                },
+                timeText: "2:00 - 4:10 PM",
+                title: "IDK",
+                speaker: people[3],
             },
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker: {
-                    name: "Aram Harrow",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Aram Harrow.jpg",
-                    more: "https://linkedin.com/",
-                    id: 2,
-                },
+                timeText: "4:30 - 5:30 PM",
+                title: "Adiabatic Quantum Machine Learning",
+                speaker: people[0],
             }
         ]
     },
     {
         dayCount: 3,
-        dateText: "17 Dec",
+        dateText: "23 Feb",
         events: [
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker:     {
-                    name: "Jacob Biamonte",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Jacob Biamonte.jpeg",
-                    more: "https://linkedin.com/",
-                    id: 3,
-                },
+                timeText: "10:00 - 11:00 AM",
+                title: "Beyond Quantum Kernels, Beyond Supervised Learning",
+                speaker: people[7],
             },
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker:     {
-                    name: "Jacob Biamonte",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Jacob Biamonte.jpeg",
-                    more: "https://linkedin.com/",
-                    id: 3,
-                },
+                timeText: "11:10 - 12:10 PM",
+                title: "On Barren Plateaus and Cost Function Locality in Variational Quantum Algorithms",
+                speaker: people[2],
             },
             {
-                timeText: "5:00 - 6:00 PM",
-                title: "The future of Retinal Implants",
-                speaker:     {
-                    name: "Jacob Biamonte",
-                    title: "title",
-                    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-                    src: "/images/Jacob Biamonte.jpeg",
-                    more: "https://linkedin.com/",
-                    id: 3,
-                },
-            }
+                timeText: "2:00 - 3:00 PM",
+                title: "IDK",
+                speaker: people[4],
+            },
+            {
+                timeText: "3:10 - 4:10 PM",
+                title: "IDK",
+                speaker: people[5],
+            },
+            {
+                timeText: "4:30 - 5:30 PM",
+                title: "IDK",
+                speaker: people[1],
+            },
         ]
     },
 ]
 
-const registrationEnd = new Date(2022, 3, 1).getTime() // timestamp
+const registrationEnd = new Date(2022, 2, 20).getTime() // timestamp
 
-const speakers = [1, 2, 3, 4, 5, 6, 7, 8]
-const staff = [1, 2, 3, 4, 5, 6, 7, 8]
+const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const staff = [1, 2, 3, 4, 5, 6]
 
 const peopleMap = {}
-for(let {id, ...props} of people) {
+for (let { id, ...props } of people) {
     peopleMap[id] = props
 }
 
 export async function requestForSpeakers(setSpeakers) {
     const res = []
-    for(let id of speakers) {
-        const {name, title, src} = peopleMap[id]
-        res.push({name, title, src, id, moreInfo: true})
+    for (let id of speakers) {
+        const { name, title, src } = peopleMap[id]
+        res.push({ name, title, src, id, moreInfo: true })
     }
     setSpeakers(res)
 }
 
 export function requestForStaff(setStaff) {
     const res = []
-    for(let id of staff) {
-        const {name, title, src} = peopleMap[id]
-        res.push({name, title, src, id, moreInfo: true})
+    for (let id of staff) {
+        const { name, title, src } = peopleMap[id]
+        res.push({ name, title, src, id, moreInfo: true })
     }
     setStaff(res)
 }
