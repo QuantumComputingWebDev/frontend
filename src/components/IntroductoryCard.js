@@ -10,15 +10,15 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
     const matchesXs = useMediaQuery((theme) => theme.breakpoints.only('xs'));
     const matchesSm = useMediaQuery((theme) => theme.breakpoints.only('sm'));
     const matchesMd = useMediaQuery((theme) => theme.breakpoints.only('md'));
-    let imageSize = {height: "270px", width: "270px"}
+    let imageSize = {height: "360px", width: "270px"}
     if(matchesMd) {
-        imageSize = {height: "190px", width: "190px"}
+        imageSize = {height: "255px", width: "190px"}
     }
     if(matchesSm) {
-        imageSize = {height: "140px", width: "140px"}
+        imageSize = {height: "190px", width: "140px"}
     }
     if(matchesXs) {
-        imageSize = {height: "120px", width: "120px"}
+        imageSize = {height: "160px", width: "120px"}
     }
 
     const navigate = useNavigate();
