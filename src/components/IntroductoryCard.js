@@ -12,14 +12,8 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
     const matchesSm = useMediaQuery((theme) => theme.breakpoints.only('sm'));
     const matchesMd = useMediaQuery((theme) => theme.breakpoints.only('md'));
     let imageSize = {height: "360px", width: "270px"}
-    if(matchesMd) {
-        imageSize = {height: "255px", width: "190px"}
-    }
-    if(matchesSm) {
-        imageSize = {height: "190px", width: "140px"}
-    }
-    if(matchesXs) {
-        imageSize = {height: "160px", width: "120px"}
+    if(matchesMd || matchesSm || matchesXs) {
+        imageSize = {height: "275px", width: "210px"}
     }
 
     const navigate = useNavigate();
@@ -33,7 +27,7 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
                     <LazyCardMedia component="img" image={src} alt={name} style={{objectFit: "cover", objectPosition: "0 0", width: "100%", height: "100%"}} />
                     <div className="overlay-content" />
                     <div className="ribbon">
-                        <Typography variant="h5" sx={{ fontWeight: "bold", pl: 1 }} color="secondary.light" textAlign="center" onClick={go}>
+                        <Typography variant="h6" sx={{ fontWeight: "bold", pl: 1 }} color="secondary.light" textAlign="center" onClick={go}>
                             <span className="shown" color="primary.light">{name}</span>
                             { moreInfo ? <Link className="hidden" color="primary.dark">More info</Link> : []}
                         </Typography>

@@ -17,7 +17,7 @@ export default function Speakers() {
             <Grid container spacing={5} sx={{ display: "fluid", justifyContent: "center" }}>
                 {
                     speakers.map(item =>(
-                        <Grid item sm={4} xs={6}>
+                        <Grid item md={4} sm={6} xs={12}>
                             <Box>
                                 <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id} />
                             </Box>
