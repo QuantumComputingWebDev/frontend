@@ -3,12 +3,12 @@
   src: url(../font/Bahij_Palatino_Sans_Arabic-Regular.ttf);
 }
 @font-face {
-  font-family: ipschan;
-  src: url(../font/@IPSCHANNEL-HUDSONNYPROSLAB-REGULAR.TTF);
+  font-family: incomplete;
+  src: url(../font/IncompleetaRegular.ttf);
 }
 @font-face {
-  font-family: ipschan;
-  src: url(../font/@IPSCHANNEL-HUDSONNYPROSLAB-REGULARITL.TTF);
+  font-family: incomplete;
+  src: url(../font/IncompleetaItalic.ttf);
   font-style: italic;
 }
 

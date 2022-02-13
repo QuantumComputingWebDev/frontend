@@ -12,7 +12,7 @@ function Title(props) {
             variant="h1"
             underline="none"
             color="inherit"
-            sx={{ ...props.sx, fontFamily: "ipschan"}}
+            sx={{ ...props.sx, fontFamily: "incomplete"}}
             style={{textDecoration: "none"}}
             textAlign="center"
             href="/#about"
