@@ -15,7 +15,6 @@ import RegisterDialog from "./components/RegisterDialog";
 import {RecoilRoot} from "recoil";
 import People from "./pages/People";
 import NotFound from "./pages/NotFound";
-import About from "./pages/About";
 
 import SwiperCore, { Autoplay } from 'swiper'
 import {useEffect} from "react";
@@ -40,7 +39,6 @@ function App() {
                             <Routes>
                                 <Route exact path="/" element={<Home />} />
                                 <Route exact path="/people/:id" element={<People />} />
-                                <Route exact path="/about" element={<About />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
                         </ErrorSnackbar></ErrorBoundary>
