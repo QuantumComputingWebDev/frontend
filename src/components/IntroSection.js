@@ -1,6 +1,5 @@
 import "../styles/IntroSection.scss";
 import FullCenterPage from "./FullCenterPage";
-import Button from "@mui/material/Button";
 import {Box} from "@mui/material";
 import RainbowTypography from "./RainbowTypography";
 import {openRegisterDialog} from "./RegisterDialog";

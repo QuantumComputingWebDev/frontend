@@ -87,11 +87,11 @@
 }
 
 .atom-container {
-  opacity: 0.6;
+  opacity: 0;
   transition: 0.5s ease;
 }
 .atom-container:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 @keyframes trail_ {
