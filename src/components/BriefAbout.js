@@ -11,7 +11,7 @@ import ImageText from "./ImageText";
 export default function BriefAbout() {
     return (
         <Container>
-            <ImageText src="/images/about.jpeg">
+            <ImageText src="/images/about.jpg">
                 <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: "center"}}>
                     <RainbowTypography variant="h3">About the event</RainbowTypography>
                     <RainbowTypography variant="h6" sx={{lineHeight: 2}}>
