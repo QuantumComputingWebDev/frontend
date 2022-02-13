@@ -25,13 +25,13 @@ function Title(props) {
 export default function IntroSection() {
     return (
         <FullCenterPage className="intro-section-container">
-            <a href="/#about" style={{ textDecoration: "none" }}>
+            <div onClick={()=>window.location.href="/#about"}>
                 <div className="glow">
                     <Title sx={{color: "secondary.light"}}>Quantum</Title>
                     <Title sx={{color: "secondary.main"}}>Machine</Title>
                     <Title sx={{color: "secondary.dark"}}>Learning</Title>
                 </div>
-            </a>
+            </div>
             <div className="atom-container">
                 <div><div /></div>
                 <div><div /></div>

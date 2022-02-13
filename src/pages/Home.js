@@ -11,7 +11,7 @@ import Phanous from "../components/Phanous";
 export default function Home() {
     return (
         <>
-                <img src="/images/back-code.png" className="header-image"/>
+                <img src="/images/back-code.png" className="home-header-image"/>
                 <div id="intro"><IntroSection id="intro" /></div>
                 <Spacer space={5} />
                 <div id="about"><BriefAbout /></div>
@@ -24,7 +24,7 @@ export default function Home() {
                 <Spacer space={10} />
                 <Phanous />
                 <Spacer space={5} />
-                <img src="/images/back-ray.png" className="footer-image"/>
+                <img src="/images/back-ray.png" className="home-footer-image"/>
         </>
     );
 }
