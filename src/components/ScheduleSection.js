@@ -24,6 +24,8 @@ export default function ScheduleSection() {
             <Typography variant="h3" sx={{ color: "secondary.main", p: 2}} textAlign="center">Registration Ends In:</Typography>
             <CountdownContainer date={countDownTime} />
             <Spacer space={4} />
+            <RainbowTypography variant="h2" textAlign="center">{events[activeIndex].dateText}</RainbowTypography>
+            <Spacer space={1} />
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <ButtonGroup variant="contained" aria-label="outlined primary button group">
                     {events.map((day, index)=>(
@@ -34,7 +36,6 @@ export default function ScheduleSection() {
                     ))}
                 </ButtonGroup>
             </Box>
-            <RainbowTypography variant="h2" textAlign="center">{events[activeIndex].dateText}</RainbowTypography>
             <TimelineContainer items={events[activeIndex].events} />
         </Box>
     )
