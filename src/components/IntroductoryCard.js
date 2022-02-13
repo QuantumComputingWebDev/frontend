@@ -1,9 +1,10 @@
-import {Card, Typography, useMediaQuery} from "@mui/material";
+import {Card, CardContent, Typography, useMediaQuery} from "@mui/material";
 import LazyCardMedia from "./LazyCardMedia";
 
 import Box from "@mui/material/Box";
 import "../styles/IntroductoryCard.css";
 import {useNavigate} from "react-router-dom";
+import Link from "@mui/material/Link";
 
 
 export default function IntroductoryCard({src, name, title, personId:id, moreInfo}) {
@@ -30,15 +31,15 @@ export default function IntroductoryCard({src, name, title, personId:id, moreInf
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Card className="overlay-container" onClick={go} style={imageSize} sx={{ boxShadow: 3 }}>
                     <LazyCardMedia component="img" image={src} alt={name} style={{objectFit: "cover", objectPosition: "0 0", width: "100%", height: "100%"}} />
-                    <Box className={`overlay-content ${moreInfo ? "golden-overlay-content" : ""}`} sx={{ display: "flex", flexDirection: 'column-reverse', cursor: "pointer" }}>
-                        <Typography variant="h4" color="secondary.light">{title}</Typography>
-                    </Box>
+                    <div className="overlay-content" />
+                    <div className="ribbon">
+                        <Typography variant="h5" sx={{ fontWeight: "bold", pl: 1 }} color="secondary.light" textAlign="center" onClick={go}>
+                            <span className="shown" color="primary.light">{name}</span>
+                            { moreInfo ? <Link className="hidden" color="primary.dark">More info</Link> : []}
+                        </Typography>
+                    </div>
                 </Card>
             </Box>
-            {
-                moreInfo ? <Typography variant="h5" sx={{ fontWeight: "bold" }} color="secondary.light" textAlign="center" className={"hoverYellow"} onClick={go}>{name}</Typography>
-                :          <Typography variant="h5" sx={{ fontWeight: "bold" }} color="primary.light" textAlign="center">{name}</Typography>
-            }
         </div>
     )
 }

@@ -3,13 +3,11 @@
 }
 
 .overlay-container:hover  .overlay-content {
-    /*transform: scaleY(1);*/
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .overlay-container:active .overlay-content {
-    /*transform: scaleY(1);*/
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .overlay-content {
@@ -32,6 +30,34 @@
     transition: 0.5s ease;
 }
 
-.golden-overlay-content {
-    background-color: #645701;
+.gray-overlay-content {
+    background-color: #565656;
+}
+
+.ribbon {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background: #c42222;
+    padding-right: 10px;
+    border-radius: 0 10% 10% 0;
+}
+
+.ribbon .hidden {
+    position: absolute;
+    visibility: hidden;
+}
+.ribbon .shown {
+    position: relative;
+    visibility: visible;
+}
+
+.overlay-container:hover .ribbon .hidden {
+    position: relative;
+    visibility: visible;
+}
+
+.overlay-container:hover .ribbon .shown {
+    position: absolute;
+    visibility: hidden;
 }
