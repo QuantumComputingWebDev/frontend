@@ -23,7 +23,7 @@ export default function IntroductoryCard({src, name, about, title, personId:id, 
                     <LazyCardMedia component="img" image={src} alt={name} style={{objectFit: "cover", objectPosition: "0 0", width: "100%", height: "100%"}} />
                     {moreInfo ? <div className="overlay-content" /> : []}
                     <div className="ribbon">
-                        <Typography variant="h6" sx={{ fontWeight: "bold", pl: 1 }} color="secondary.light" textAlign="center">
+                        <Typography variant="h6" sx={{ fontWeight: "bold", pl: 1 }} color="#00F6FF" textAlign="center">
                             <span className={moreInfo ? "shown" : ""} color="primary.light">{name}</span>
                             { moreInfo ? <Link className="hidden" color="primary.dark">More info</Link> : []}
                         </Typography>
