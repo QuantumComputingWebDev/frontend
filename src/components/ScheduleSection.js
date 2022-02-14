@@ -32,6 +32,7 @@ export default function ScheduleSection() {
                         <Button
                             onClick={()=>setActiveIndex(index)}
                             variant={index === activeIndex ? "contained" : "outlined"}
+                            sx={{ color:"#00F6FF" }}
                         >Day #{day.dayCount}</Button>
                     ))}
                 </ButtonGroup>
