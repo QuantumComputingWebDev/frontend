@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import {Stack} from "@mui/material";
-import "../styles/IntroSection.scss";
 
 export default function FullCenterPage(props) {
     return (
