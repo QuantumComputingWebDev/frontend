@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {faTwitter, faLinkedin, faInstagram, faTelegram} from '@fortawesome/free-brands-svg-icons'
 import {Divider, Stack, Typography, useMediaQuery} from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
@@ -11,7 +11,7 @@ function ContactItem({label, children}) {
     return (
         <Box sx={{ textAlign: "left", mb: 1}}>
             <Typography variant="h5" sx={{ fontWeight: "bold" }}>{label}</Typography>
-            <Typography variant="p">{children}</Typography>
+            {children}
         </Box>
     )
 }
@@ -50,29 +50,7 @@ export default function Footer() {
             </Box>
         </Box>
     )
-    const socialMediaBox = (
-        <Box sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-        }}
-        >
-            <Typography variant="h5" textAlign="center">Social Media</Typography>
-            <Box sx={{pt: 4}}>
-                <SocialItem link="https://twitter.com/phanous_ir">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" className="hoverYellow" />
-                </SocialItem>
-                <SocialItem link="https://linkedin.com/company/phanous">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" className="hoverYellow" />
-                </SocialItem>
-                <SocialItem link="https://instagram.com/phanous_ir">
-                    <FontAwesomeIcon icon={faInstagram} size="2x" className="hoverYellow" />
-                </SocialItem>
-            </Box>
-        </Box>
-    )
-
-    const contactUsBox = (
+    const resanaBox = (
         <Box sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -80,15 +58,70 @@ export default function Footer() {
             px: 5
         }}
         >
-            <Typography variant="h5" textAlign="center">Contact Us</Typography>
+            <Typography variant="h5" textAlign="center">Resana</Typography>
             <Stack>
                 <ContactItem label="Address">
-                    {"No. 8, 2nd Peyvand, Farhang Sq."}
-                    {"Saadatabad, Tehran, Iran"}
+                    <Typography variant="p">
+                        No. 8, 2nd Peyvand, Farhang Sq.
+                        Saadatabad, Tehran, Iran"
+                    </Typography>
+                </ContactItem>
+                <ContactItem label="Email">
+                    <Typography variant="p">
+                        Resana@ee.sharif.edu
+                    </Typography>
+                </ContactItem>
+                <ContactItem label="Social Media">
+                    <Box sx={{pt: 1}}>
+                        <SocialItem link="https://t.me/react2021">
+                            <FontAwesomeIcon icon={faTelegram} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                        <SocialItem link="https://www.linkedin.com/company/eereact">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                        <SocialItem link="https://instagram.com/Resana_Association">
+                            <FontAwesomeIcon icon={faInstagram} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                    </Box>
+                </ContactItem>
+            </Stack>
+        </Box>
+    )
+
+    const phanousBox = (
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            px: 5
+        }}
+        >
+            <Typography variant="h5" textAlign="center">Phanous</Typography>
+            <Stack>
+                <ContactItem label="Address">
+                    <Typography variant="p">
+                        No. 8, 2nd Peyvand, Farhang Sq.
+                        Saadatabad, Tehran, Iran"
+                    </Typography>
                 </ContactItem>
                 <Divider />
                 <ContactItem label="Email">
-                    public@phanous.ir
+                    <Typography variant="p">
+                        public@phanous.ir
+                    </Typography>
+                </ContactItem>
+                <ContactItem label="Social Media">
+                    <Box sx={{pt: 1}}>
+                        <SocialItem link="https://twitter.com/phanous_ir">
+                            <FontAwesomeIcon icon={faTwitter} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                        <SocialItem link="https://linkedin.com/company/phanous">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                        <SocialItem link="https://instagram.com/phanous_ir">
+                            <FontAwesomeIcon icon={faInstagram} size="2x" className="hoverYellow" />
+                        </SocialItem>
+                    </Box>
                 </ContactItem>
             </Stack>
         </Box>
@@ -104,9 +137,9 @@ export default function Footer() {
         <Box sx={{ backgroundColor: "primary.dark", color: "secondary.light", pb: 3, pt: 5}}>
             <Container>
                 <Grid container spacing={2} >
-                    <Grid item xs={6} md={4}>{socialMediaBox}</Grid>
+                    <Grid item xs={6} md={4}>{phanousBox}</Grid>
                     {matches ? <Grid item xs={4}>{avatarBox}</Grid> : []}
-                    <Grid item xs={6} md={4}>{contactUsBox}</Grid>
+                    <Grid item xs={6} md={4}>{resanaBox}</Grid>
                 </Grid>
                 {matches ? [] : avatarBox}
                 <div>{copyRightBox}</div>
