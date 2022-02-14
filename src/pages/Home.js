@@ -22,8 +22,8 @@ export default function Home() {
                 <Spacer space={10} />
                 <div id="staff"><Staff id="staff" /></div>
                 <Spacer space={10} />
-                <Phanous />
-                <Spacer space={5} />
+                {/*<Phanous />*/}
+                {/*<Spacer space={5} />*/}
                 <img src="/images/back-ray.png" className="home-footer-image"/>
         </>
     );
