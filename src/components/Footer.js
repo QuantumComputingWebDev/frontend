@@ -26,17 +26,28 @@ function SocialItem({link, children}) {
 export default function Footer() {
     const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
     const avatarBox = (
-        <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-            <Avatar
-                alt="daneshkade bargh"
-                src="/images/bargh.png"
-                sx={{width: 80, height: 80, p: 1}}
-            />
-            <Avatar
-                alt="daneshgah sharif"
-                src="/images/sharif.png"
-                sx={{width: 80, height: 80, p: 1}}
-            />
+        <Box sx={{ display: "flex", justifyContent: "center"}}>
+            <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                <Box sx={{ display: "flex", justifyContent: "space-between", pb: 2}}>
+                    <img
+                        alt="daneshkade bargh"
+                        src="/images/bargh.png"
+                        style={{height: 70}}
+                    />
+                    <img
+                        alt="daneshgah sharif"
+                        src="/images/sharif.png"
+                        style={{height: 70}}
+                    />
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "center", p:1}}>
+                    <img
+                        alt="daneshkade bargh"
+                        src="/images/phanous.png"
+                        style={{height: 45}}
+                    />
+                </Box>
+            </Box>
         </Box>
     )
     const socialMediaBox = (
