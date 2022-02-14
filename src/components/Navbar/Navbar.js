@@ -13,12 +13,12 @@ export default function Navbar() {
             setShowNav(false)
         }
     })
-    const backgroundSx = {}
+    const initSx = {}
     if(!showNav) {
-        backgroundSx.backgroundColor = "transparent"
+        initSx.opacity = 0;
     }
     return (
-        <AppBar position="sticky" sx={{...backgroundSx, transition: "1s ease"}}>
+        <AppBar position="sticky" sx={{...initSx, transition: "1s ease"}}>
             {matches ? <DesktopNavbar /> : <MobileNavbar />}
         </AppBar>
     )
