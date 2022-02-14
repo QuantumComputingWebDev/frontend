@@ -7,8 +7,9 @@ import RainbowTypography from "./RainbowTypography";
 import Link from "@mui/material/Link";
 import ImageText from "./ImageText";
 import UpLink from "./UpLink";
+import Paper from "@mui/material/Paper";
 
-export default function PersonInfo({name, about, src, title, id, more}) {
+export default function PersonInfo({name, about, src, title, id, link}) {
     return (
         <Container>
             <ImageText src={src}>
@@ -18,7 +19,7 @@ export default function PersonInfo({name, about, src, title, id, more}) {
                     <Box sx={{ pt: 5 }}>
                         <RainbowTypography style={{lineHeight: 2}} dangerouslySetInnerHTML={{__html: about}} />
                         {
-                            more ? <Link href={more}>More About {name}</Link> : []
+                            link ? <Link href={link}>More About {name}</Link> : []
                         }
                     </Box>
                 </Box>

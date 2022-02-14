@@ -19,7 +19,7 @@ export default function Speakers() {
                     speakers.map(item =>(
                         <Grid item md={4} sm={6} xs={12}>
                             <Box>
-                                <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id} />
+                                <IntroductoryCard {...item} />
                             </Box>
                         </Grid>
                     ))

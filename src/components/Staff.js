@@ -45,7 +45,7 @@ export default function Speakers() {
                 {
                     staff.map(item =>(
                         <SwiperSlide>
-                            <IntroductoryCard src={item.src} name={item.name} title={item.title} moreInfo={item.moreInfo} personId={item.id}/>
+                            <IntroductoryCard {...item} />
                         </SwiperSlide>
                     ))
                 }

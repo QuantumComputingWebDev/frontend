@@ -72,3 +72,12 @@ body {
   text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #f6af67, 0 0 8px #ce5f03, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;
   /*text-shadow: 0 0 6px #fff, 0 0 8px #f6de67, 0 0 10px #f6c967, 0 0 12px #f6a167, 0 0 14px #ff4da6, 0 0 16px #ff4da6, 0 0 20px #ff4da6;*/
 }
+.event-card:hover {
+  transition: 0.6s ease-in-out;
+}
+
+.event-card:hover {
+  cursor: pointer;
+  background-color: purple;
+  transform: scale(1.04);
+}

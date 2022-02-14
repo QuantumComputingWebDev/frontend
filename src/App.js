@@ -13,12 +13,10 @@ import {ErrorBoundary} from "./components/Error/ErrorBoundary";
 import {ErrorSnackbar} from "./components/Error/ErrorSnackbar";
 import RegisterDialog from "./components/RegisterDialog";
 import {RecoilRoot} from "recoil";
-import People from "./pages/People";
 import NotFound from "./pages/NotFound";
 
 import SwiperCore, { Autoplay } from 'swiper'
 import {useEffect} from "react";
-import Spacer from "./components/Spacer";
 
 function config() {
     SwiperCore.use([Autoplay])
@@ -38,7 +36,6 @@ function App() {
                             <RegisterDialog />
                             <Routes>
                                 <Route exact path="/" element={<Home />} />
-                                <Route exact path="/people/:id" element={<People />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
                         </ErrorSnackbar></ErrorBoundary>
