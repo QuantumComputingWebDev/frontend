@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
+import Spacer from "./Spacer";
 
 function ContactItem({label, children}) {
     return (
@@ -24,30 +25,23 @@ function SocialItem({link, children}) {
 }
 
 export default function Footer() {
-    const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
     const avatarBox = (
-        <Box sx={{ display: "flex", justifyContent: "center"}}>
-            <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                <Box sx={{ display: "flex", justifyContent: "space-between", pb: 2}}>
-                    <img
-                        alt="daneshkade bargh"
-                        src="/images/bargh.png"
-                        style={{height: 70}}
-                    />
-                    <img
-                        alt="daneshgah sharif"
-                        src="/images/sharif.png"
-                        style={{height: 70}}
-                    />
-                </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", p:1}}>
-                    <img
-                        alt="daneshkade bargh"
-                        src="/images/phanous.png"
-                        style={{height: 45}}
-                    />
-                </Box>
-            </Box>
+        <Box sx={{ display: "flex", justifyContent: "space-around"}}>
+            <img
+                alt="daneshkade bargh"
+                src="/images/bargh.png"
+                style={{ width: "8vw" }}
+            />
+            <img
+                alt="phanous"
+                src="/images/phanous.png"
+                style={{ width: "25vw" }}
+            />
+            <img
+                alt="daneshgah sharif"
+                src="/images/sharif.png"
+                style={{ width: "8vw" }}
+            />
         </Box>
     )
     const resanaBox = (
@@ -136,12 +130,13 @@ export default function Footer() {
     return (
         <Box sx={{ backgroundColor: "primary.dark", color: "secondary.light", pb: 3, pt: 5}}>
             <Container>
+                {avatarBox}
+                <Spacer space={2} />
                 <Grid container spacing={2} >
-                    <Grid item xs={6} md={4}>{phanousBox}</Grid>
-                    {matches ? <Grid item xs={4}>{avatarBox}</Grid> : []}
-                    <Grid item xs={6} md={4}>{resanaBox}</Grid>
+                    <Grid item xs={6}>{phanousBox}</Grid>
+                    <Grid item xs={6}>{resanaBox}</Grid>
                 </Grid>
-                {matches ? [] : avatarBox}
+                <Spacer space={2} />
                 <div>{copyRightBox}</div>
             </Container>
         </Box>
