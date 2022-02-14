@@ -65,7 +65,7 @@ const people = [
         id: 7,
     },
     {
-        name: "Vedran Dunjiko",
+        name: "Vedran Dunjko",
         about: `I am an Assistant Professor (tenure track) at the Leiden Institute of
         Advanced Computer Science, Leiden University, and a member of the LIACS
         theory group. I am also affiliated with the Quantum Software
@@ -73,7 +73,7 @@ const people = [
         title: "Assistant Professor (tenure track, UD1), lead of aQa group, LIACS & LION, Leiden University",
         src: "/images/Vedran Dunjko.jpg",
         link: "https://linkedin.com/",
-        posterSrc: `/images/posters/Vedran Dunjiko intro.jpeg`,
+        posterSrc: `/images/posters/Vedran Dunjko intro.jpeg`,
         id: 8,
     },
     {
