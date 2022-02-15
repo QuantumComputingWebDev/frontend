@@ -1,13 +1,8 @@
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import {Card, CardContent, Stack} from "@mui/material";
-import LazyCardMedia from "./LazyCardMedia";
 import Box from "@mui/material/Box";
 import RainbowTypography from "./RainbowTypography";
 import Link from "@mui/material/Link";
 import ImageText from "./ImageText";
-import UpLink from "./UpLink";
-import Paper from "@mui/material/Paper";
 
 export default function PersonInfo({name, about, src, title, id, link}) {
     return (

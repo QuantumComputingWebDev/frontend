@@ -1,11 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import {Card, CardContent, CardMedia, Stack, useMediaQuery} from "@mui/material";
-import LazyCardMedia from "./LazyCardMedia";
 import RainbowTypography from "./RainbowTypography";
-import Link from "@mui/material/Link";
-import UpLink from "./UpLink";
 import ImageText from "./ImageText";
 
 export default function BriefAbout() {

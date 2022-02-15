@@ -1,7 +1,5 @@
 import Box from "@mui/material/Box";
-import {Card, CardContent, useMediaQuery} from "@mui/material";
-import LazyCardMedia from "./LazyCardMedia";
-
+import {Card, CardContent, CardMedia, useMediaQuery} from "@mui/material";
 
 export default function ImageText(props) {
     const match = useMediaQuery((theme) => theme.breakpoints.down('md'));
@@ -17,7 +15,7 @@ export default function ImageText(props) {
         return (
             <Card sx={{ display: "flex" }} style={{ backgroundColor: "inherit" }} elevation={0}>
                 <CardContent>{props.children}</CardContent>
-                <LazyCardMedia component="img" image={props.src} alt="poster" style={{ maxHeight: "60vh" }} />
+                <CardMedia component="img" image={props.src} alt="poster" style={{ maxHeight: "60vh" }} />
             </Card>
         )
     }
