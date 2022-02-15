@@ -7,6 +7,7 @@ import Link from "@mui/material/Link";
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Spacer from "./Spacer";
+import UpLink from "./UpLink";
 
 function ContactItem({label, children}) {
     return (
@@ -123,7 +124,7 @@ export default function Footer() {
 
     const copyRightBox = (
         <Typography variant="h6" textAlign="center" color="primary.light">
-            Copyright © 2022
+            <Link component={UpLink} to="/dev">Copyright © 2022</Link>
         </Typography>
     )
 

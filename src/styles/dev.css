@@ -1,0 +1,20 @@
+.person {
+    transition: 0.7s ease-in-out;
+}
+
+.person:hover {
+    transform: scale(1.2);
+}
+
+.person-1 {
+    transform: translate(3vw, 1vw);
+}
+.person-2 {
+    transform: translate(0, 7vw);
+}
+.person-3 {
+    transform: translate(0, 7vw);
+}
+.person-4 {
+    transform: translate(-3vw, 1vw);
+}

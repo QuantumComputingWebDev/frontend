@@ -1,6 +1,7 @@
 import * as React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
+import Dev from "./pages/Dev";
 import theme from "./theme/theme";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import {
@@ -36,6 +37,7 @@ function App() {
                             <RegisterDialog />
                             <Routes>
                                 <Route exact path="/" element={<Home />} />
+                                <Route exact path="/dev" element={<Dev />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
                         </ErrorSnackbar></ErrorBoundary>

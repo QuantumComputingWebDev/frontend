@@ -9,9 +9,10 @@ export default function Navbar() {
     window.addEventListener('scroll', ()=>{
         if(window.scrollY >= 10) {
             setShowNav(true)
-        } else {
-            setShowNav(false)
         }
+        // else {
+        //     setShowNav(false)
+        // }
     })
     const initSx = {}
     if(!showNav) {
