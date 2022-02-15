@@ -13,7 +13,7 @@ export default function ClickablePoster({children, poster}) {
                 {children}
             </Box>
             {
-                poster &&
+                poster && clicked &&
                 <Backdrop
                     sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, overflow: "scroll"}}
                     open={clicked}

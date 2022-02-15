@@ -65,6 +65,7 @@ body {
 }
 
 .glow * {
+  text-shadow: 0 0 7px #ce5f03, 0 0 7px #bda56e;
   transition: 0.5s ease-in-out;
 }
 
@@ -80,4 +81,14 @@ body {
   cursor: pointer;
   background-color: purple;
   transform: scale(1.04);
+}
+
+.big-link {
+  text-decoration: none !important;
+  transition: 0.4s ease;
+}
+.big-link:hover {
+  cursor: pointer;
+  text-shadow: 0 0 10px #a87e54;
+  transform: scale(1.02);
 }

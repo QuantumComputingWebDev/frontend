@@ -8,6 +8,8 @@ import Button from "@mui/material/Button";
 import RainbowTypography from "./RainbowTypography";
 import Spacer from "./Spacer";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import ClickablePoster from "./ClickablePoster";
 
 export default function ScheduleSection() {
     const [events, setEvents] = useState(null)
@@ -24,8 +26,10 @@ export default function ScheduleSection() {
             <Typography variant="h3" sx={{ color: "secondary.main", p: 2}} textAlign="center">Registration Ends In:</Typography>
             <CountdownContainer date={countDownTime} />
             <Spacer space={4} />
-            <RainbowTypography variant="h2" textAlign="center">{events[activeIndex].dateText}</RainbowTypography>
-            <Spacer space={1} />
+            <ClickablePoster poster={events[activeIndex].eventPoster}>
+                <Link variant="h2" textAlign="center" component={RainbowTypography} className="big-link">{events[activeIndex].dateText}</Link>
+            </ClickablePoster>
+            <Spacer space={2} />
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <ButtonGroup variant="contained" aria-label="outlined primary button group">
                     {events.map((day, index)=>(

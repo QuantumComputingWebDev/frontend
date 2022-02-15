@@ -30,17 +30,17 @@ export default function Footer() {
             <img
                 alt="daneshkade bargh"
                 src="/images/bargh.png"
-                style={{ width: "10vw", height: "auto" }}
+                style={{ width: "7vw", height: "auto" }}
             />
             <img
                 alt="phanous"
                 src="/images/phanous.png"
-                style={{ width: "40vw", height: "auto" }}
+                style={{ width: "30vw", height: "auto" }}
             />
             <img
                 alt="daneshgah sharif"
                 src="/images/sharif.png"
-                style={{ width: "10vw", height: "auto" }}
+                style={{ width: "7vw", height: "auto" }}
             />
         </Box>
     )
