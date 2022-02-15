@@ -56,8 +56,8 @@ export default function Footer() {
             <Stack>
                 <ContactItem label="Address">
                     <Typography variant="p">
-                        No. 8, 2nd Peyvand, Farhang Sq.
-                        Saadatabad, Tehran, Iran"
+                        Sharif University of Technology
+                        Azadi Ave., Tehran, Iran
                     </Typography>
                 </ContactItem>
                 <ContactItem label="Email">

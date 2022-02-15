@@ -129,6 +129,12 @@ const people = [
         name: "Parsa Asemi Nia",
         src: "/images/Parsa Asemi Nia.jpeg",
         id: 16
+    },
+
+    {
+        name: "Mystery Speaker",
+        src: "/images/Mystery Speaker.jpeg",
+        id: 17
     }
 ]
 
@@ -143,6 +149,7 @@ const events = [
                 title: "Introduction to Quantum Computation",
                 speaker: people[6],
                 briefDescription: "From qubits to quantum gates and measurements, discussing one quantum algorithm as an example, this talk provides information about using quantum to perform computational tasks faster.",
+                description: "It is strongly believed that quantum computers can perform certain computational tasks much faster than classical computers. In this talk, I will review basic elements of the circuit model of quantum computation, from qubits to quantum gates and measurements. To further illustrate the model, I will discuss a quantum algorithm as an example.",
                 poster: "/images/posters/event1_1.jpeg",
             },
             {
@@ -150,7 +157,17 @@ const events = [
                 title: "Introduction to Classical Machine Learning",
                 speaker: people[8],
                 briefDescription: "As it walks through the history of Machine Learning (ML), this lecture provides some practical examples of recent achievements in this field such as successful NLP systems.",
+                description: "Over the past several years, Machine Learning (ML) has become a popular subject both within and outside of the scientific community. It can be briefly defined as enabling computers to make successful predictions using past experiences. Recently, ML has exhibited an impressive development due to the help of the rapid increase in the storage capacity and processing power of computers. In this talk, I will give a brief introduction to classical machine learning and the story of its evolution from simple programmable rules in the 1950s to the gigantic neural networks that have been transforming our lives for the past decade. In particular, a number of recent achievements in the field of Natural Language Processing (NLP) will be briefly reviewed as some practical examples. In addition, I will also go through a series of theoretical advancements in this field, and highlight the role of statistics in providing provable guarantees on the performance of ML frameworks.\n" +
+                    "This talk is aimed for the general audience with no particular prior knowledge regarding ML or its subfields.",
                 poster: "/images/posters/event1_2.jpeg",
+            },
+            {
+                timeText: "4:30 - 5:30 PM",
+                title: "Recent Trends in Machine Learning",
+                speaker: people[16],
+                briefDescription: "",
+                description: "In this talk, we present a few of the recent research trends in machine learning. We first explain, at a high level, a few basic and well-studied problems in machine learning such as clustering, online learning, and feature engineering. Next, we introduce a few challenges in using the classical solutions to these problems in the modern era, such as scalability and transparency. We proceed by presenting some of the new results and techniques to deal with these challenges. Along the way, we propose some open problems in this context.",
+                poster: "/images/posters/event1_3.jpeg",
             },
         ]
     },
@@ -164,6 +181,7 @@ const events = [
                 title: "Variational Quantum - Classical Algorithms",
                 speaker: people[9],
                 briefDescription: "Pointing out variational quantum-classical algorithms as the most promising approach for achieving quantum advantage, Dr. Bayat explores their applications across various subjects and introduces VQE algorithm, as one of the most widely used variational methods.",
+                description: "Variational quantum-classical algorithms are the most promising approach for achieving quantum advantage. In the first lecture, we will explain the variational quantum-classical algorithms from a general perspective and explore their applications across various subjects. In the second lecture, by focusing on the Variational Quantum Eigensolver (VQE) algorithm, as one of the most widely used variational methods, we try to give a detailed picture about challenges and possible solutions for achieving quantum advantage.",
                 poster: "/images/posters/event2_1.jpeg",
             },
             {
@@ -171,6 +189,7 @@ const events = [
                 title: "Quantum Machine Learning of Classical Data",
                 speaker: people[3],
                 briefDescription: "In this talk we study the basic notation of quantum machine learning and discuss data encoding as the first step in QML. Finally, we talk about different ways of data encoding.",
+                description: "In a world where the total amount of data is increasing rapidly, there are hopes that quantum computers can help in processing and interpreting these data more rapidly. We talk about the basic notation of quantum machine learning and discuss the first step in a quantum machine learning algorithm in processing classical data, which is the data encoding. We review some known algorithms for encoding the classical data into a quantum state and argue about their costs and benefits.",
                 poster: "/images/posters/event2_2.jpeg",
             },
             {
@@ -178,6 +197,7 @@ const events = [
                 title: "Adiabatic Quantum Machine Learning",
                 speaker: people[0],
                 briefDescription: "After introducing Adiabatic Quantum Machine Learning, we'll talk about Quantum Annealing and QAOA as examples of generic quantum optimization algorithms.",
+                description: "In this short lecture, we will start by reviewing the adiabatic theorem in quantum mechanics. Utilizing the adiabatic theorem we'll develop a generic quantum optimization algorithm, i.e. Quantum Annealing. We'll also show how this is related to another generic optimization algorithm known as QAOA. We'll conclude by discussing some of the recent results that bound the power of Quantum Annealing.",
                 poster: "/images/posters/event2_3.jpeg",
             }
         ]
@@ -192,6 +212,8 @@ const events = [
                 title: "Beyond Quantum Kernels, Beyond Supervised Learning",
                 speaker: people[7],
                 briefDescription: "Introducing Parametrized Quantum Circuits (PQCs) as means to achieve QML, this talk revolves around new applications of PQCs in Reinforcement Learning (RL) which is the closest branch of machine learning to AI.",
+                description: "In this talk we will reflect on two new results in which we provide a new systematisation of PQCs as models for supervised learning, showing provable advantages of going beyond the well-known kernel-based perspective and approaches. \n" +
+                    "In the second part of the talk, we will discuss new applications of PQCs in the context of  the third main branch of machine learning - reinforcement learning (RL). RL is arguably closest to AI, and which is at the core of the celebrated AlphaGo results.",
                 poster: "/images/posters/event3_1.jpeg",
             },
             {
@@ -199,6 +221,7 @@ const events = [
                 title: "On Barren Plateaus and Cost Function Locality in Variational Quantum Algorithms",
                 speaker: people[2],
                 briefDescription: "In this talk, we will give an overview of the barren plateaus phenomenon and report on recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
+                description: "Variational quantum algorithms rely on gradient based optimization to iteratively minimize a cost function evaluated by measuring output(s) of a quantum processor. A barren plateau is the phenomenon of exponentially vanishing gradients in sufficiently expressive parametrized quantum circuits. It has been established that the onset of a barren plateau regime depends on the cost function, although the particular behavior has been demonstrated only for certain classes of cost functions. In this talk, we will give an overview of the barren plateaus phenomenon and report on our recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
                 poster: "/images/posters/event3_2.jpeg",
             },
             {
@@ -228,7 +251,7 @@ const events = [
 
 const registrationEnd = new Date(2022, 1, 21).getTime() // timestamp
 
-const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17]
 const staff = [11, 12, 13, 14, 15, 16]
 
 const peopleMap = {}
