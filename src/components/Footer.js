@@ -95,7 +95,7 @@ export default function Footer() {
                 <ContactItem label="Address">
                     <Typography variant="p">
                         No. 8, 2nd Peyvand, Farhang Sq.
-                        Saadatabad, Tehran, Iran"
+                        Saadatabad, Tehran, Iran
                     </Typography>
                 </ContactItem>
                 <Divider />

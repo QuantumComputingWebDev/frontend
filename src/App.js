@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound";
 
 import SwiperCore, { Autoplay } from 'swiper'
 import {useEffect} from "react";
+import People from "./pages/People";
 
 function config() {
     SwiperCore.use([Autoplay])
@@ -37,6 +38,7 @@ function App() {
                             <RegisterDialog />
                             <Routes>
                                 <Route exact path="/" element={<Home />} />
+                                <Route exact path="/people/:id" element={<People />} />
                                 <Route exact path="/dev" element={<Dev />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>

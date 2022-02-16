@@ -135,7 +135,32 @@ const people = [
         name: "Mystery Speaker",
         src: "/images/Mystery Speaker.jpeg",
         id: 17
-    }
+    },
+
+    {
+        name: "Fatemeh Anjavi",
+        src: "/images/Fatemeh Anjavi.jpeg",
+        id: 18
+    },
+
+    {
+        name: "Asal Roudbari",
+        src: "/images/Asal Roudbari.jpeg",
+        id: 19
+    },
+
+    {
+        name: "Shayan Pardis",
+        src: "/images/developers/shayan.jpeg",
+        id: 20
+    },
+
+    {
+        name: "Ali Salesi",
+        src: "/images/developers/sales.jpeg",
+        id: 21
+    },
+
 ]
 
 const events = [
@@ -214,7 +239,7 @@ const events = [
                 briefDescription: "Introducing Parametrized Quantum Circuits (PQCs) as means to achieve QML, this talk revolves around new applications of PQCs in Reinforcement Learning (RL) which is the closest branch of machine learning to AI.",
                 description: "In this talk we will reflect on two new results in which we provide a new systematisation of PQCs as models for supervised learning, showing provable advantages of going beyond the well-known kernel-based perspective and approaches. \n" +
                     "In the second part of the talk, we will discuss new applications of PQCs in the context of  the third main branch of machine learning - reinforcement learning (RL). RL is arguably closest to AI, and which is at the core of the celebrated AlphaGo results.",
-                poster: "/images/posters/event3_1.jpeg",
+                // poster: "/images/posters/event3_1.jpeg",
             },
             {
                 timeText: "11:10 AM - 12:10 PM",
@@ -222,28 +247,28 @@ const events = [
                 speaker: people[2],
                 briefDescription: "In this talk, we will give an overview of the barren plateaus phenomenon and report on recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
                 description: "Variational quantum algorithms rely on gradient based optimization to iteratively minimize a cost function evaluated by measuring output(s) of a quantum processor. A barren plateau is the phenomenon of exponentially vanishing gradients in sufficiently expressive parametrized quantum circuits. It has been established that the onset of a barren plateau regime depends on the cost function, although the particular behavior has been demonstrated only for certain classes of cost functions. In this talk, we will give an overview of the barren plateaus phenomenon and report on our recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
-                poster: "/images/posters/event3_2.jpeg",
+                // poster: "/images/posters/event3_2.jpeg",
             },
             {
                 timeText: "2:00 - 3:00 PM",
                 title: "Advanced Topics in Quantum Machine Learning",
                 speaker: people[4],
                 briefDescription: "",
-                poster: "/images/posters/event3_3.jpeg",
+                // poster: "/images/posters/event3_3.jpeg",
             },
             {
                 timeText: "3:10 - 4:10 PM",
                 title: "Advanced Topics in Quantum Machine Learning",
                 speaker: people[5],
                 briefDescription: "",
-                poster: "/images/posters/event3_4.jpeg",
+                // poster: "/images/posters/event3_4.jpeg",
             },
             {
                 timeText: "4:30 - 5:30 PM",
                 title: "Advanced Topics in Quantum Machine Learning",
                 speaker: people[1],
                 briefDescription: "",
-                poster: "/images/posters/event3_5.jpeg",
+                // poster: "/images/posters/event3_5.jpeg",
             },
         ]
     },
@@ -252,7 +277,7 @@ const events = [
 const registrationEnd = new Date(2022, 1, 21).getTime() // timestamp
 
 const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17]
-const staff = [11, 12, 13, 14, 15, 16]
+const staff = [11, 12, 13, 14, 15, 16, 18, 19, 20, 21]
 
 const peopleMap = {}
 for (let { id, ...props } of people) {
@@ -283,7 +308,7 @@ export async function requestForRegistrationEnd(setTime) {
     setTime(registrationEnd)
 }
 
-export function requestForPerson(id, setPerson) {
+export async function requestForPerson(id, setPerson) {
     // todo handle 404 here
     setPerson(peopleMap[+id])
 }
