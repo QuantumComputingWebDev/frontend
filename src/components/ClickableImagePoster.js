@@ -1,6 +1,5 @@
 import ClickablePoster from "./ClickablePoster";
 import LazyLoad from "react-lazyload";
-import {Skeleton} from "@mui/lab";
 import {CircularProgress} from "@mui/material";
 
 export default function ClickableImagePoster({children, poster, onError}) {
