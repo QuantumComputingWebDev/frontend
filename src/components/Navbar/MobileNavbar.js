@@ -1,13 +1,13 @@
 import * as React from 'react';
+import {useState} from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import {useState} from "react";
 import {openRegisterDialog} from "../RegisterDialog";
 import Typography from "@mui/material/Typography";
 import UpLink from "../UpLink";
-import {AppBar, IconButton, ListItem} from "@mui/material";
+import {IconButton, ListItem} from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from '@mui/icons-material/Menu';
 

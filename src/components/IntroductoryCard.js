@@ -1,4 +1,4 @@
-import {Backdrop, Card, CardContent, CardMedia, Typography, useMediaQuery} from "@mui/material";
+import {Card, Typography, useMediaQuery} from "@mui/material";
 import Box from "@mui/material/Box";
 import "../styles/IntroductoryCard.css";
 import Link from "@mui/material/Link";

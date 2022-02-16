@@ -1,4 +1,3 @@
-import {Box, Stack} from "@mui/material";
 import RainbowTypography from "../components/RainbowTypography";
 import UpLink from "../components/UpLink";
 import FullCenterPage from "../components/FullCenterPage";

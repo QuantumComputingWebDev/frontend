@@ -1,5 +1,4 @@
 import React from "react";
-import ErrorModal from "./ErrorModal";
 
 
 export class ErrorBoundary extends React.Component {

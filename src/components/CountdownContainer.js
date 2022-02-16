@@ -1,6 +1,6 @@
 import * as React from "react";
-import {Box, Button, Toolbar} from "@mui/material";
-import { useTimer } from 'react-timer-hook';
+import {Box} from "@mui/material";
+import {useTimer} from 'react-timer-hook';
 import TimerStyled from "./Timer/TimerStyled";
 
 export default function CountdownContainer({date}) {
@@ -9,11 +9,6 @@ export default function CountdownContainer({date}) {
         minutes,
         hours,
         days,
-        isRunning,
-        start,
-        pause,
-        resume,
-        restart,
     } = useTimer({ expiryTimestamp: date, onExpire: () => console.warn('onExpire called') });
 
     return (

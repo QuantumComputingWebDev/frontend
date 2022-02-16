@@ -1,10 +1,9 @@
 import Grid from "@mui/material/Grid";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faTwitter, faLinkedin, faInstagram, faTelegram} from '@fortawesome/free-brands-svg-icons'
-import {Divider, Stack, Typography, useMediaQuery} from "@mui/material";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faInstagram, faLinkedin, faTelegram, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {Divider, Stack, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Spacer from "./Spacer";
 import UpLink from "./UpLink";

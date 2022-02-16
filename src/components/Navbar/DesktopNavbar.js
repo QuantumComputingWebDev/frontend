@@ -1,11 +1,9 @@
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import {AppBar} from "@mui/material";
 import {openRegisterDialog} from "../RegisterDialog";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import UpLink from "../UpLink";
-import {useState} from "react";
 
 const rightLink = {
     color: 'common.white',
