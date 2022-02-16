@@ -9,7 +9,7 @@ export default function ClickableImagePoster({children, poster, onError}) {
                       style={{maxHeight: "90vh", maxWidth: "90vw"}}
                       placeholder={<Skeleton style={{width: "100%", height: "100%"}}/>}
             >
-                <img src={poster} style={{maxHeight: "90vh", maxWidth: "90vw"}} alt="poster" onError={onError}/>}
+                <img src={poster} style={{maxHeight: "90vh", maxWidth: "90vw"}} alt="poster" onError={onError}/>
             </LazyLoad>
         }>
         {children}
