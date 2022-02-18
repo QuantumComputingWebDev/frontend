@@ -1,3 +1,6 @@
+import axios from "axios";
+
+
 const people = [
     {
         name: "Ali Hamed Moosavian",
@@ -284,11 +287,15 @@ for (let { id, ...props } of people) {
     peopleMap[id] = props
 }
 
+const apiPrefix = "/api/v1";
+const baseUrl = window.location.protocol + "//" + window.location.host + apiPrefix;
+
 export async function requestForSpeakers(setSpeakers) {
-    const res = []
-    for (let id of speakers) {
-        res.push({...peopleMap[id], id, moreInfo: true})
-    }
+    // const res = []
+    // for (let id of speakers) {
+    //     res.push({...peopleMap[id], id, moreInfo: true})
+    // }
+    const res = await axios(`${apiPrefix}/speaker`);
     setSpeakers(res)
 }
 
