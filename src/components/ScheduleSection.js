@@ -18,36 +18,40 @@ export default function ScheduleSection() {
     useEffect(()=>requestForEvents(setEvents),[])
     useEffect(()=>requestForRegistrationEnd(setCountDownTime),[])
 
-    if(events === null || countDownTime === null)
-        return <></>
-
     return (
         <Box>
             <Typography variant="h3" sx={{ color: "secondary.main", p: 2}} textAlign="center">Registration Ends In:</Typography>
-            <CountdownContainer date={countDownTime} />
-            <Spacer space={4} />
             {
-                events[activeIndex].eventPoster ?
-                    <ClickableImagePoster poster={events[activeIndex].eventPoster}>
-                        <Link variant="h2" textAlign="center" component={RainbowTypography}
-                              className="big-link">{events[activeIndex].dateText}</Link>
-                    </ClickableImagePoster>
-                    :
-                    <RainbowTypography variant="h2" textAlign="center">{events[activeIndex].dateText}</RainbowTypography>
+                countDownTime && <CountdownContainer date={countDownTime} />
             }
-            <Spacer space={2} />
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <ButtonGroup variant="contained" aria-label="outlined primary button group">
-                    {events.map((day, index)=>(
-                        <Button
-                            onClick={()=>setActiveIndex(index)}
-                            variant={index === activeIndex ? "contained" : "outlined"}
-                            sx={{ color:"#00F6FF" }}
-                        >Day #{day.dayCount}</Button>
-                    ))}
-                </ButtonGroup>
-            </Box>
-            <TimelineContainer items={events[activeIndex].events} />
+            {
+                events && events.length && 
+                <>
+                    <Spacer space={4} />
+                    {
+                        events[activeIndex].eventPoster ?
+                            <ClickableImagePoster poster={events[activeIndex].eventPoster}>
+                                <Link variant="h2" textAlign="center" component={RainbowTypography}
+                                    className="big-link">{events[activeIndex].dateText}</Link>
+                            </ClickableImagePoster>
+                            :
+                            <RainbowTypography variant="h2" textAlign="center">{events[activeIndex].dateText}</RainbowTypography>
+                    }
+                    <Spacer space={2} />
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
+                        <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                            {events.map((day, index)=>(
+                                <Button
+                                    onClick={()=>setActiveIndex(index)}
+                                    variant={index === activeIndex ? "contained" : "outlined"}
+                                    sx={{ color:"#00F6FF" }}
+                                >Day #{day.dayCount}</Button>
+                            ))}
+                        </ButtonGroup>
+                    </Box>
+                    <TimelineContainer items={events[activeIndex].events} />
+                </>
+            }
         </Box>
     )
 }
