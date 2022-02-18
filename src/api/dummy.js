@@ -161,6 +161,18 @@ const people = [
         id: 21
     },
 
+    {
+        name: "Moen Makyan",
+        src: "/images/Moen Makyan.jpeg",
+        id: 22
+    },
+
+    {
+        name: "Zahra Sodagar",
+        src: "/images/Zahra Sodagar.jpeg",
+        id: 23
+    },
+
 ]
 
 const events = [
@@ -239,7 +251,7 @@ const events = [
                 briefDescription: "Introducing Parametrized Quantum Circuits (PQCs) as means to achieve QML, this talk revolves around new applications of PQCs in Reinforcement Learning (RL) which is the closest branch of machine learning to AI.",
                 description: "In this talk we will reflect on two new results in which we provide a new systematisation of PQCs as models for supervised learning, showing provable advantages of going beyond the well-known kernel-based perspective and approaches. \n" +
                     "In the second part of the talk, we will discuss new applications of PQCs in the context of  the third main branch of machine learning - reinforcement learning (RL). RL is arguably closest to AI, and which is at the core of the celebrated AlphaGo results.",
-                // poster: "/images/posters/event3_1.jpeg",
+                poster: "/images/posters/event3_1.jpeg",
             },
             {
                 timeText: "11:10 AM - 12:10 PM",
@@ -247,21 +259,23 @@ const events = [
                 speaker: people[2],
                 briefDescription: "In this talk, we will give an overview of the barren plateaus phenomenon and report on recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
                 description: "Variational quantum algorithms rely on gradient based optimization to iteratively minimize a cost function evaluated by measuring output(s) of a quantum processor. A barren plateau is the phenomenon of exponentially vanishing gradients in sufficiently expressive parametrized quantum circuits. It has been established that the onset of a barren plateau regime depends on the cost function, although the particular behavior has been demonstrated only for certain classes of cost functions. In this talk, we will give an overview of the barren plateaus phenomenon and report on our recent results relating the behavior of the gradients to the causal cone structure of the quantum circuit.",
-                // poster: "/images/posters/event3_2.jpeg",
+                poster: "/images/posters/event3_2.jpeg",
             },
             {
                 timeText: "2:00 - 3:00 PM",
                 title: "Advanced Topics in Quantum Machine Learning",
                 speaker: people[4],
                 briefDescription: "",
+                description: "",
                 // poster: "/images/posters/event3_3.jpeg",
             },
             {
                 timeText: "3:10 - 4:10 PM",
-                title: "Advanced Topics in Quantum Machine Learning",
+                title: "Classical shadows: Efficient Quantum-to-Classical Converters with Many Applications",
                 speaker: people[5],
                 briefDescription: "",
-                // poster: "/images/posters/event3_4.jpeg",
+                description: "",
+                poster: "/images/posters/event3_4.jpeg",
             },
             {
                 timeText: "4:30 - 5:30 PM",
@@ -277,7 +291,7 @@ const events = [
 const registrationEnd = new Date(2022, 1, 21).getTime() // timestamp
 
 const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17]
-const staff = [11, 12, 13, 14, 15, 16, 18, 19, 20, 21]
+const staff = [11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23]
 
 const peopleMap = {}
 for (let { id, ...props } of people) {
