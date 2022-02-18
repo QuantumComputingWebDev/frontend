@@ -162,8 +162,8 @@ const people = [
     },
 
     {
-        name: "Moen Makyan",
-        src: "/images/Moen Makyan.jpeg",
+        name: "Moien Makkiyan",
+        src: "/images/Moien Makkiyan.jpeg",
         id: 22
     },
 
