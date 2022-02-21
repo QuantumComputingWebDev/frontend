@@ -1,5 +1,5 @@
 
 module.exports = {
     name: "frontend",
-    script: "yarn start",
+    script: "npm start",
 }
