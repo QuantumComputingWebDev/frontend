@@ -4,7 +4,7 @@ import "../styles/IntroductoryCard.css";
 import Link from "@mui/material/Link";
 import ClickableImagePoster from "./ClickableImagePoster";
 import LazyLoad from 'react-lazyload';
-import {Skeleton} from "@mui/lab";
+import { Skeleton } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 
 export default function IntroductoryCard({src, name, about, title, id, moreInfo, link, posterSrc}) {

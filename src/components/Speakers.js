@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import RainbowTypography from "./RainbowTypography";
-import {requestForSpeakers} from "../api/dummy";
+import {requestForSpeakers} from "../api/api";
 import {Box} from "@mui/material";
 
 export default function Speakers() {
@@ -17,7 +17,7 @@ export default function Speakers() {
                 <Grid container spacing={5} sx={{ display: "fluid", justifyContent: "center" }}>
                     {
                         speakers.map(item =>(
-                            <Grid item md={4} sm={6} xs={12}>
+                            <Grid item md={4} sm={6} xs={12} key={item.id}>
                                 <Box>
                                     <IntroductoryCard {...item} />
                                 </Box>

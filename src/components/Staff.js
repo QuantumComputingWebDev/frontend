@@ -5,7 +5,7 @@ import RainbowTypography from "./RainbowTypography";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from "swiper";
-import {requestForStaff} from "../api/dummy";
+import {requestForStaff} from "../api/api";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -44,7 +44,7 @@ export default function Speakers() {
                 >
                     {
                         staff.map(item =>(
-                            <SwiperSlide>
+                            <SwiperSlide key={item.id}>
                                 <IntroductoryCard {...item} />
                             </SwiperSlide>
                         ))

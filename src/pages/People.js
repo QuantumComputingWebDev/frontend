@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import {requestForPerson} from "../api/dummy";
+import {requestForPerson} from "../api/api";
 import {useEffect, useState} from "react";
 import FullCenterPage from "../components/FullCenterPage";
 import {Box, CircularProgress} from "@mui/material";

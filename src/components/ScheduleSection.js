@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import CountdownContainer from "./CountdownContainer";
 import {TimelineContainer} from "./TimelineContainer";
 import {useEffect, useState} from "react";
-import {requestForEvents, requestForRegistrationEnd} from "../api/dummy";
+import {requestForEvents, requestForRegistrationEnd} from "../api/api";
 import {ButtonGroup} from "@mui/material";
 import Button from "@mui/material/Button";
 import RainbowTypography from "./RainbowTypography";
