@@ -1,5 +1,6 @@
 
 module.exports = {
+    name: "frontend",
     script: "serve",
     env: {
         PM2_SERVE_PATH: 'build',
